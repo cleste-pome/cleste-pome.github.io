@@ -1,9 +1,10 @@
 {% if site.visitor_map.enabled %}
 <!--
-  访客地图
-  这是一个静态站点，本身没法记录访客来源，必须借助第三方服务。
-  把服务商给的嵌入代码粘贴到下面 visitor-footer__map 里的标记处。
-  详细步骤见 README 的「页脚访客地图」一节。
+  页脚访客地图
+  静态站点自己无法记录访客来源，这里走的是两条免注册的公开接口：
+    · 访客国家：Cloudflare trace（失败退回 ipwho.is）
+    · 计数存储：Abacus（免费计数 API）
+  逻辑在 assets/js/visitor-map.js，样式在 _sass/_footer.scss 的 .visitor-footer
 -->
 <footer class="visitor-footer" role="contentinfo">
   <div class="visitor-footer__inner">
@@ -12,14 +13,17 @@
       <h4 class="visitor-footer__title">{{ site.visitor_map.title }}</h4>
     {% endif %}
 
-    {% if site.visitor_map.subtitle %}
-      <p class="visitor-footer__subtitle">{{ site.visitor_map.subtitle }}</p>
-    {% endif %}
+    <div class="visitor-map">
+      <div class="visitor-map__stage">
+        <img class="visitor-map__base"
+             src="{{ '/assets/img/world-dots.svg' | relative_url }}"
+             alt="" aria-hidden="true" loading="lazy">
+        <svg class="visitor-map__dots" viewBox="0 0 1440 720" aria-label="访客来源地图"></svg>
+      </div>
 
-    <div class="visitor-footer__map">
-      <!-- ▼▼▼ 访客地图嵌入代码粘贴处 ▼▼▼ -->
-
-      <!-- ▲▲▲ 粘贴结束 ▲▲▲ -->
+      <p class="visitor-map__stat">
+        <span data-visitor-stat>—</span>{% if site.visitor_map.subtitle %} &middot; {{ site.visitor_map.subtitle }}{% endif %}
+      </p>
     </div>
 
   </div>
