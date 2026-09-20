@@ -170,6 +170,33 @@
     box-shadow: 0 16px 34px rgba(0, 0, 0, .22);
 }
 
+// 头像反光层：跟着鼠标走的一道高光，像卡牌的镭射
+// 尺寸/位置由 avatar-tilt.js 按头像实际大小同步，所以用绝对定位
+.author__avatar {
+    position: relative;
+}
+
+.avatar-glare {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50%;
+    pointer-events: none;          // 不能挡住鼠标事件
+    opacity: 0;
+    z-index: 1;
+    transition: opacity .35s ease;
+    background: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%),
+                rgba(255, 255, 255, .60) 0%,
+                rgba(255, 255, 255, .22) 26%,
+                rgba(255, 255, 255, 0)   62%);
+    mix-blend-mode: screen;        // 叠加而不是盖住，更像真实反光
+}
+
+.author__avatar.is-tilting .avatar-glare {
+    opacity: 1;
+}
+
 // 论文条目：期刊/会议信息后的括注（CCF-A、一作等）单独占一行
 .pub-note {
     display: block;
