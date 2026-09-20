@@ -78,13 +78,13 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 
 <!-- TODO(小萌老师): 还有别的论文就复制上面任意一个 paper-box 整块。
      配图放 images/papers/ 目录。不想用卡片样式也可以写成一行：
-     **标题** — 作者. *期刊 年份*. [\[Paper\]]() [\[Code\]]()
+     **标题** - 作者. *期刊 年份*. [\[Paper\]]() [\[Code\]]()
      GMAE 的 [Paper] 我给了 IEEE Xplore 链接，如需换成 DOI 链接：
      https://doi.org/10.1109/TPAMI.2026.3687339 -->
 
 # 💻 Projects
 
-- *2024.06 - 2026.06*, **多场景下跨模态数据融合的检索技术研究**, 中央高校基本科研业务费——大学生自主创新资助计划（项目编号：2024XLB7），**已结题，主持**.
+- *2024.06 - 2026.06*, **多场景下跨模态数据融合的检索技术研究**, 中央高校基本科研业务费-大学生自主创新资助计划（项目编号：2024XLB7），**已结题，主持**.
 
 <!-- TODO(小萌老师): 还有别的项目就按上面格式加 -->
 
@@ -92,10 +92,8 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 - *2026.09 - now*, **Ph.D. in Computer Science and Technology**, School of Computer Science and Technology, [Huazhong University of Science and Technology](https://www.hust.edu.cn/), Wuhan, China.
 - *2023.09 - 2026.06*, **M.Eng. in Computer Science and Technology**, School of Computer Science, [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/), Wuhan, China.
 - *2018.09 - 2022.06*, **B.Eng. in Mechanical Design, Manufacturing and Automation**, [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/), Wuhan, China.
+- *2022.08 - 2023.07*, **Full-time High School Physics Teacher**, the 24th Graduate Student Support Mission of China University of Geosciences, Chuxiong, Yunnan, China.
 
-<!-- TODO(小萌老师): ORCID (0009-0007-5367-047X) 上还有一条经历：
-     2022.08 - 2023.07 在中国地质大学（武汉）第24届研究生支教团任高中物理教师。
-     要不要单独开一个 "Experience" 板块放它？说一声我就加。 -->
 
 <!-- 
   这几个板块暂时留空（导航栏里也先没放），等你发材料过来我再加回来：
