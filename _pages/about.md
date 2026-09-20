@@ -29,7 +29,9 @@ redirect_from:
 
 # 📝 Publications
 
-<!-- 排序：最新发表的放在最上面 -->
+<!-- 排序：最新发表的放在最上面，按年份分小节 -->
+
+## 2026
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><img src='images/papers/gmae-framework.png' alt="GMAE" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -61,6 +63,8 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 </div>
 
 -->
+
+## 2025
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/papers/sparsemvc-method.png' alt="SparseMVC" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
