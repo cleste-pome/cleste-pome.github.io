@@ -21,7 +21,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Ruimeng Liu (刘睿萌)"
+  name             : "Ruimeng Liu (刘睿萌)"   # 用于 SEO / 头像 alt，保持单行
+  name_display     : "Ruimeng Liu<br>（刘睿萌）"  # 侧边栏显示：英文名与中文名分两行
   # 头像：3:4 竖版裁剪，原图见仓库根目录（已加入 .gitignore，不会上传）
   avatar           : "images/avatar.jpg"
   bio              : "Ph.D. Student, Huazhong University of Science and Technology"
