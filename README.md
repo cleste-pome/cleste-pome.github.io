@@ -130,6 +130,50 @@ git push
 <span class='show_paper_citations' data='论文的SCHOLAR_ID'></span>
 ```
 
+## 可选：页脚访客地图（浏览量 + 世界地图打点）
+
+页脚已经预留好了位置和样式，但**代码需要你去第三方服务生成**——静态站点自己没法记录访客来源，必须靠外部服务。
+
+### 步骤
+
+1. 挑一个服务，注册/生成你自己的嵌入代码（**代码和你的网址绑定，别人不能代生成**）：
+
+   | 服务 | 说明 |
+   | --- | --- |
+   | [MapMyVisitors](https://mapmyvisitors.com/) | 免费，世界地图 + 实时打点，可选 3D 地球。声称嵌入代码无需注册 |
+   | [ClustrMaps](https://clustrmaps.com/) | 老牌服务，免费版仍在。GitHub Pages 上用得最多 |
+   | [RevolverMaps](https://www.revolvermaps.com/) | 免费 3D 地球 / 2D 地图 |
+   | [FeedPulse](https://feedpulse.io/) | 免费免注册，主打轻量 |
+
+   注册时填的网址是 `https://cleste-pome.github.io/`。
+
+2. 复制它给你的那段 `<script>`（或 `<img>`）代码。
+
+3. 粘贴到 `_includes/footer.html` 里这两行注释之间：
+
+   ```html
+   <!-- ▼▼▼ 访客地图嵌入代码粘贴处 ▼▼▼ -->
+   把代码粘在这里
+   <!-- ▲▲▲ 粘贴结束 ▲▲▲ -->
+   ```
+
+4. 把 `_config.yml` 里的开关打开：
+
+   ```yaml
+   visitor_map:
+     enabled  : true      # ← 改成 true
+     title    : "🌍 Visitors"
+     subtitle : "Where readers come from"
+   ```
+
+5. `git add -A && git commit -m "add visitor map" && git push`
+
+### 说明
+
+- 开关是 `false` 时整个页脚不渲染，页面上不会出现一块空白。
+- 样式在 `_sass/_footer.scss` 的 `.visitor-footer`，想调颜色/间距改那里。
+- ⚠️ **隐私提示**：这类服务会记录访客 IP 来定位，等于把访客数据交给第三方。介意的话可以只用纯计数器、或者不启用。
+
 ## 许可证
 
 本项目沿用原模板的 **MIT License**，版权归原作者 **Yi Ren (RayeRen)** 所有，详见 [`LICENSE`](./LICENSE)。
