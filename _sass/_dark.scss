@@ -1,0 +1,152 @@
+/* ==========================================================================
+   深色模式
+   --------------------------------------------------------------------------
+   默认是浅色。点导航栏右上角的按钮切换，选择存在 localStorage。
+   生效方式：<html data-theme="dark">
+   注意：为了不出现"先白后黑"的闪烁，_includes/head/custom.html 里有一段
+        内联脚本，在页面渲染前就把 data-theme 打上去。
+   ========================================================================== */
+
+$dk-bg        : #14181d;   // 页面底色
+$dk-bg-soft   : #1b2028;   // 导航栏 / 卡片 / 页脚
+$dk-bg-code   : #10141a;   // 代码块
+$dk-border    : #2b323c;
+$dk-text      : #c2ccd6;
+$dk-text-soft : #8a95a2;
+$dk-heading   : #e6edf3;
+$dk-link      : #6ea8fe;
+
+html[data-theme="dark"] {
+  color-scheme: dark;      // 让滚动条、表单控件也变深
+
+  body {
+    background-color: $dk-bg;
+    color: $dk-text;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $dk-heading;
+  }
+
+  a {
+    color: $dk-link;
+
+    &:hover      { color: lighten($dk-link, 12%); }
+    &:visited    { color: $dk-link; }
+    &:focus      { color: lighten($dk-link, 12%); }
+  }
+
+  hr {
+    border-color: $dk-border;
+  }
+
+  /* 顶部导航 ---------------------------------------------------------- */
+  .masthead {
+    background-color: $dk-bg-soft;
+    border-bottom: 1px solid $dk-border;
+  }
+
+  .greedy-nav {
+    background: $dk-bg-soft;
+
+    a          { color: $dk-text; }
+    a:hover    { color: $dk-heading; }
+    .visible-links a:before { background: $dk-heading; }
+    button     { background-color: $dk-bg-soft; }
+    .navicon, .navicon:before, .navicon:after { background: $dk-text; }
+  }
+
+  /* 侧边栏 ------------------------------------------------------------ */
+  .author__urls {
+    background: $dk-bg-soft;
+    border-color: $dk-border;
+    box-shadow: 0 0 10px rgba(#000, .5);
+
+    &:after { border-color: $dk-bg-soft transparent; }
+  }
+
+  .author__name,
+  .author__bio strong         { color: $dk-heading; }
+  .author__bio,
+  .author__bio-zh,
+  .author__research-label     { color: $dk-text-soft; }
+  .author__research-list strong { color: $dk-text; }
+  .author__research-app       { color: $dk-text-soft; }
+
+  /* 正文 -------------------------------------------------------------- */
+  code, pre, .highlight {
+    background-color: $dk-bg-code;
+    color: $dk-text;
+    border-color: $dk-border;
+  }
+
+  blockquote {
+    color: $dk-text-soft;
+    border-left-color: $dk-border;
+  }
+
+  table {
+    color: $dk-text;
+
+    th, td { border-color: $dk-border; }
+    tr:nth-child(even) { background-color: rgba(#fff, .03); }
+  }
+
+  /* 论文卡片 ---------------------------------------------------------- */
+  .paper-box {
+    border-bottom-color: $dk-border;
+
+    &-image img { box-shadow: 0 0 0 1px $dk-border; }
+  }
+
+  .badge {
+    background-color: #2f6fd0;
+  }
+
+  .pub-note {
+    color: $dk-text-soft;
+    strong { color: $dk-text; }
+  }
+
+  .pub-highlight {
+    color: #ff7b6b;
+  }
+
+  /* 中文对照行 -------------------------------------------------------- */
+  .zh {
+    color: $dk-text-soft;
+
+    a       { color: $dk-link; }
+    strong  { color: $dk-text; }
+  }
+
+  /* 页脚访客地图 ------------------------------------------------------ */
+  .visitor-footer {
+    background-color: $dk-bg-soft;
+    border-top-color: $dk-border;
+  }
+
+  .visitor-footer__title  { color: $dk-heading; }
+  .visitor-footer__subtitle,
+  .visitor-map__stat      { color: $dk-text-soft; }
+  .visitor-map__stat [data-visitor-stat] { color: $dk-text; }
+
+  // 点阵地图是深藏青描边，深色底上要反相才看得见
+  .visitor-map__base {
+    filter: invert(1) hue-rotate(180deg) brightness(1.2);
+  }
+
+  .visitor-dot--other .visitor-dot__core {
+    fill: $dk-link;
+  }
+
+  /* 切换按钮本身 ------------------------------------------------------ */
+  .theme-toggle {
+    color: $dk-text;
+
+    &:hover {
+      color: $dk-heading;
+      background-color: rgba(#fff, .08);
+    }
+  }
+}

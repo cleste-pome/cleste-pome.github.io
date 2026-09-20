@@ -5,6 +5,18 @@
 <link rel="manifest" href="images/icon/site.webmanifest?v=2">
 
 <meta name="theme-color" content="#ffffff">
+
+<!-- 深色模式：必须在页面渲染前执行，否则会先白闪一下再变黑。
+     这里只读 localStorage，逻辑在 assets/js/theme-toggle.js -->
+<script>
+  (function () {
+    try {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (e) {}
+  })();
+</script>
 <link rel="stylesheet" href="assets/css/academicons.css"/>
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
