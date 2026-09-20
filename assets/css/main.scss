@@ -154,6 +154,22 @@
 
 }
 
+// 头像 3D 倾斜（逻辑在 assets/js/avatar-tilt.js）
+// 鼠标移动中：短过渡，跟手
+// 移出 / 松开：长过渡，平滑回正
+.author__avatar img {
+    backface-visibility: hidden;
+    will-change: transform;
+    transition: transform .55s cubic-bezier(.2, .8, .3, 1),
+                box-shadow .55s ease;
+}
+
+.author__avatar.is-tilting img {
+    transition: transform .08s linear,
+                box-shadow .25s ease;
+    box-shadow: 0 16px 34px rgba(0, 0, 0, .22);
+}
+
 // 论文条目：期刊/会议信息后的括注（CCF-A、一作等）单独占一行
 .pub-note {
     display: block;
