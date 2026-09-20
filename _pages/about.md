@@ -10,15 +10,12 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am **Ruimeng Liu** (刘睿萌), pursuing the Ph.D. degree with the School of Computer Science and Technology, [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://scholar.google.com/citations?user=quDLqhwAAAAJ). I received the B.Eng. degree in Mechanical Design, Manufacturing, and Automation from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/) in 2022, and the M.Eng. degree in Computer Science from the same university in 2026.
+I am **Ruimeng Liu** (刘睿萌), pursuing the Ph.D. degree with the School of Computer Science and Technology, [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://tangchang.net/). I received the B.Eng. degree in Mechanical Design, Manufacturing, and Automation from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/) in 2022, and the M.Eng. degree in Computer Science from the same university in 2026.
 
 My research interests include **multimodal representation learning** and **self-supervised learning**, focusing on **interpretability** and applications in **multimodal medicine** and **computer vision**.
 
-<!-- TODO(小萌老师): 
-  - 唐厂老师的链接我用的是他的 Google Scholar (user=quDLqhwAAAAJ)，
-    他 Scholar 上的单位还写着中国地质大学，你核对一下要不要换成 HUST 主页：
-    http://faculty.hust.edu.cn/tangchang/en/jsxx/2627181/jsxx/jsxx.htm
-  - 邮箱 liuruimeng@hust.edu.cn 已加到 _config.yml，侧边栏会显示 -->
+<!-- 唐厂老师链接：https://tangchang.net/ （已按小萌老师要求替换）
+     邮箱 liuruimeng@hust.edu.cn 已加到 _config.yml，侧边栏会显示 -->
 
 # 🔥 News
 - *2026.09*: &nbsp;🎉🎉 Our paper **GMAE** is accepted by **IEEE TPAMI**.
