@@ -15,10 +15,13 @@
 (function () {
   'use strict';
 
-  var NS      = 'cleste-pome-github-io';        // 计数命名空间
+  var NS      = 'cleste-pome-homepage';         // 计数命名空间（换名字=计数清零重来）
   var API     = 'https://abacus.jasoncameron.dev';
   var TOTAL   = 'total';                        // 总访问量键
   var MAP_W   = 1440, MAP_H = 720;              // 与 world-dots.svg 的 viewBox 一致
+
+  // Abacus 要求 key 长度 3~64，而 ISO 国家码只有 2 位，必须加前缀
+  function ckey(cc) { return 'c-' + cc; }
 
   var COUNTRY = ["CN","US","GB","DE","JP","KR","AU","CA","IN","NL","CH","SE","IT","ES","BR","RU","MY","TH","VN","ID","PK","TR","PL","IL","AE","SA","ZA","NZ","MX","AR","CL","PT","CZ","GR","HU","RO","UA","BE","AT","DK","FI","IE","EG","PH","BD","LK","NP","KZ","IR","IQ","NG","KE","MA","CO","PE","VE","EC","UY","CR","SK","SI","HR","RS","BG","LT","LV","EE","IS","LU","CY","QA","KW","OM","JO","LB"];
 
@@ -98,7 +101,7 @@
 
     visitorCountry().then(function (cc) {
       var jobs = [ bump(TOTAL) ];
-      if (cc && /^[A-Z]{2}$/.test(cc)) jobs.push(bump(cc));
+      if (cc && /^[A-Z]{2}$/.test(cc)) jobs.push(bump(ckey(cc)));
 
       Promise.all(jobs).then(function (res) {
         var total = res[0] || 0;
@@ -106,7 +109,7 @@
         if (cc && names.indexOf(cc) === -1) names.push(cc);
 
         Promise.all(names.map(function (c) {
-          return read(c).then(function (v) { return [c, v]; });
+          return read(ckey(c)).then(function (v) { return [c, v]; });
         })).then(function (rows) {
           var counts = {};
           rows.forEach(function (r) { if (r[1] > 0) counts[r[0]] = r[1]; });
