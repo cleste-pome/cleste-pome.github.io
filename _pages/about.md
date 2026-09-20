@@ -10,86 +10,90 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am **Ruimeng Liu** (刘睿萌), a Ph.D. student at [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://scholar.google.com/citations?user=Q0B7FmUAAAAJ). I received my Bachelor's and Master's degrees from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/).
+I am **Ruimeng Liu** (刘睿萌), a Ph.D. student at [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://scholar.google.com/citations?user=Q0B7FmUAAAAJ). I received my Master's and Bachelor's degrees from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/).
 
 My research focuses on **unsupervised representation learning** and **multi-view clustering**. I am particularly interested in making multi-view learning robust to the messy conditions of real-world data — irregular cross-view sparsity, inconsistent manifolds, and heterogeneous view quality.
 
-Find me on [**GitHub**](https://github.com/cleste-pome) &nbsp;·&nbsp; [**Google Scholar**](https://scholar.google.com/citations?user=aUBNlUUAAAAJ&hl=zh-CN)
+Find me on [**GitHub**](https://github.com/cleste-pome) &nbsp;·&nbsp; [**Google Scholar**](https://scholar.google.com/citations?user=aUBNlUUAAAAJ&hl=zh-CN) &nbsp;·&nbsp; [**ORCID**](https://orcid.org/0009-0007-5367-047X)
 
 <!-- TODO(小萌老师): 
-  - 导师的 Google Scholar 链接我是猜的占位，请核对（或换成 HUST 主页链接）
-  - 本科/硕士/博士的起止年份请补上
-  - 邮箱有了就告诉我，加在 _config.yml 里 -->
+  - 唐厂老师的链接我是猜的占位，请核对（或换成 HUST 主页链接）
+  - 邮箱有了告诉我，加在 _config.yml 里 -->
 
 # 🔥 News
-- *2025*: &nbsp;🎉🎉 **SparseMVC** is accepted to **NeurIPS 2025** as a **Spotlight**.
-- *2026*: &nbsp;🎉🎉 **MASA** is accepted to **TPAMI**.
+- *2026.09*: &nbsp;🎉🎉 Our paper **GMAE** is accepted by **IEEE TPAMI**.
+- *2025.09*: &nbsp;🎉🎉 Our paper **SparseMVC** is accepted by **NeurIPS 2025** as a **Spotlight**.
 
-<!-- TODO(小萌老师): 这两条我只知道年份。把你谷歌学术上的具体接收月份发我（比如 2025.06），我改成：
-     - *2025.06*: &nbsp;🎉🎉 one paper is accepted in NeurIPS 2025 (Spotlight).
-     有新的动态就往最上面加一条。 -->
+<!-- TODO(小萌老师): 两件事要你确认：
+     1. SparseMVC 的录用月份我写的是 2025.09（NeurIPS 通常 9 月放榜），请核对
+     2. MASA 目前是"返修中"，录用后加一条到这里
+     3. 顺序已按你说的：最新在最上面 -->
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025 Spotlight</div><img src='images/500x300.png' alt="SparseMVC" width="100%"></div></div>
+*(newest first)*
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><img src='images/papers/gmae-framework.png' alt="GMAE" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-SparseMVC: Probing Cross-view Sparsity Variations for Multi-view Clustering
+**Learning Disentangled Representations for Generalized Multi-view Clustering**
 
-<!-- TODO(小萌老师): 补全作者列表，自己的名字加粗 -->
+Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwang Liu, Kunlun He, Wanqing Li
 
-[**Paper**](https://neurips.cc/virtual/2025/loc/san-diego/poster/117045) &nbsp;|&nbsp; [**Code**](https://github.com/cleste-pome/SparseMVC)
+*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.* (CCF-A, **co-first author**)
 
-- Probes how sparsity varies across views and exploits it for multi-view clustering.
+[\[Paper\]](https://ieeexplore.ieee.org/document/11494292/) &nbsp; [\[Code\]](https://github.com/cleste-pome/GMAE)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><img src='images/500x300.png' alt="MASA" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><img src='images/papers/masa-framework.png' alt="MASA" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Towards Robust Multi-View Clustering via Early-to-late Manifold Consistency Calibration
+**Towards Robust Multi-View Clustering via Early-to-late Manifold Consistency Calibration**
 
-<!-- TODO(小萌老师): 补全作者列表，自己的名字加粗 -->
+**Ruimeng Liu**, Chang Tang, Bo Wang, Zhenglai Li, Lianbo Guo, Xinwang Liu
 
-[**Code**](https://github.com/cleste-pome/MASA)
+*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.* (CCF-A, **first author**, under revision)
 
-- Calibrates manifold consistency from early to late training for robust multi-view clustering.
+[\[Code\]](https://github.com/cleste-pome/MASA)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><img src='images/500x300.png' alt="GMAE" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025 Spotlight</div><img src='images/papers/sparsemvc-framework.png' alt="SparseMVC" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Learning Disentangled Representations for Generalized Multi-view Clustering
+**SparseMVC: Probing Cross-view Sparsity Variations for Multi-view Clustering**
 
-<!-- TODO(小萌老师): 这篇我是从你的 star-history 里翻到的（GMAE），请确认是不是你的论文，不是的话我删掉 -->
+**Ruimeng Liu**, Xin Zou, Chang Tang, Xiao Zheng, Xingchen Hu, Kun Sun, Xinwang Liu
 
-[**Code**](https://github.com/cleste-pome/GMAE)
+*Advances in Neural Information Processing Systems (NeurIPS), 2025.* (CCF-A, **first author**, **Spotlight**)
 
-- Learns disentangled representations for generalized multi-view clustering.
+[\[Paper\]](https://proceedings.neurips.cc/paper_files/paper/2025/file/e366fff693ee7cdbca8ed2764bc18a71-Paper-Conference.pdf) &nbsp; [\[Code\]](https://github.com/cleste-pome/SparseMVC)
 </div>
 </div>
 
-<!-- TODO(小萌老师): 还有别的论文就复制上面任意一个 paper-box 整块，改标题/作者/链接/配图。
-     配图放 images/ 目录（建议 500x300）。不想用卡片样式也可以写成一行：
-     - [论文标题](链接), 作者1, 作者2, **会议/期刊 年份** -->
+<!-- TODO(小萌老师): 还有别的论文就复制上面任意一个 paper-box 整块。
+     配图放 images/papers/ 目录。不想用卡片样式也可以写成一行：
+     **标题** — 作者. *期刊 年份*. [\[Paper\]]() [\[Code\]]()
+     GMAE 的 [Paper] 我给了 IEEE Xplore 链接，如需换成 DOI 链接：
+     https://doi.org/10.1109/TPAMI.2026.3687339 -->
 
 # 💻 Projects
 
-- [**SparseMVC**](https://github.com/cleste-pome/SparseMVC) &nbsp;<img src="https://img.shields.io/github/stars/cleste-pome/SparseMVC?style=flat&color=9cf"> — PyTorch implementation for cross-view sparsity-aware multi-view clustering. *NeurIPS 2025 Spotlight*.
-- [**MASA**](https://github.com/cleste-pome/MASA) — Code release for early-to-late manifold consistency calibration. *TPAMI 2026*.
-- [**GMAE**](https://github.com/cleste-pome/GMAE) — Code release for generalized multi-view clustering with disentangled representations. *TPAMI 2026*.
-- [**MVC-plotting**](https://github.com/cleste-pome/MVC-plotting) — Plotting toolkit for multi-view clustering experiments.
-- [**Yolo26Web**](https://github.com/cleste-pome/Yolo26Web) — A web platform for YOLO26-based object detection.
+- *2024.06 - 2026.06*, **多场景下跨模态数据融合的检索技术研究**, 中央高校基本科研业务费——大学生自主创新资助计划（项目编号：2024XLB7），资助 3 万元，**已结题，主持**.
 
-<!-- TODO(小萌老师): 私有仓库（IAD / InversionAD / ResDiff 等）以后开源了可以加到这里 -->
+<!-- TODO(小萌老师): 还有别的项目就按上面格式加 -->
 
 # 📖 Educations
-- *Ph.D.* in Computer Science, [Huazhong University of Science and Technology](https://www.hust.edu.cn/), Wuhan, China. &nbsp;*(now)*
-- *M.Eng.* in Computer Science, [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/), Wuhan, China.
-- *B.Eng.* in Computer Science, [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/), Wuhan, China.
+- *2026.09 - now*, **Ph.D. in Computer Science**, Huazhong University of Science and Technology, Wuhan, China.
+- *2023.09 - 2026.06*, **M.Eng.**, School of Computer Science, China University of Geosciences (Wuhan), Wuhan, China.
+- *2018.09 - 2022.06*, **B.Eng.**, School of Mechanical Engineering and Electronic Information, China University of Geosciences (Wuhan), Wuhan, China.
 
-<!-- TODO(小萌老师): 补上起止年份，格式： - *2025.09 - now*, Ph.D. ... -->
+<!-- TODO(小萌老师): 这三条的年份我是从你的 ORCID (0009-0007-5367-047X) 上读的：
+     ORCID 上硕士写的是 2023.09 - now，博士起止和硕士毕业时间请核对一下；
+     本科的学院 ORCID 写的是"机械与电子信息学院"，不确定专业名，也请核对。
+     ORCID 上还有一条工作经历：2022.08 - 2023.07 在中国地质大学（武汉）第24届研究生支教团任高中物理教师，
+     要不要单独开一个"Experience"板块放它？ -->
 
 <!-- 
   这几个板块暂时留空（导航栏里也先没放），等你发材料过来我再加回来：
