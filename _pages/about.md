@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am **Ruimeng Liu** (刘睿萌), a Ph.D. student at [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://scholar.google.com/citations?user=Q0B7FmUAAAAJ). I received my Master's and Bachelor's degrees from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/).
+I am **Ruimeng Liu** (刘睿萌), a Ph.D. student at the School of Computer Science and Technology, [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://scholar.google.com/citations?user=Q0B7FmUAAAAJ). I received my Master's and Bachelor's degrees from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/).
 
 My research focuses on **unsupervised representation learning** and **multi-view clustering**. I am particularly interested in making multi-view learning robust to the messy conditions of real-world data — irregular cross-view sparsity, inconsistent manifolds, and heterogeneous view quality.
 
@@ -85,15 +85,13 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 <!-- TODO(小萌老师): 还有别的项目就按上面格式加 -->
 
 # 📖 Educations
-- *2026.09 - now*, **Ph.D. in Computer Science**, Huazhong University of Science and Technology, Wuhan, China.
-- *2023.09 - 2026.06*, **M.Eng.**, School of Computer Science, China University of Geosciences (Wuhan), Wuhan, China.
-- *2018.09 - 2022.06*, **B.Eng.**, School of Mechanical Engineering and Electronic Information, China University of Geosciences (Wuhan), Wuhan, China.
+- *2026.09 - now*, **Ph.D. in Computer Science and Technology**, School of Computer Science and Technology, [Huazhong University of Science and Technology](https://www.hust.edu.cn/), Wuhan, China.
+- *2023.09 - 2026.06*, **M.Eng. in Computer Science and Technology**, School of Computer Science, [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/), Wuhan, China.
+- *2018.09 - 2022.06*, **B.Eng. in Mechanical Design, Manufacturing and Automation**, [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/), Wuhan, China.
 
-<!-- TODO(小萌老师): 这三条的年份我是从你的 ORCID (0009-0007-5367-047X) 上读的：
-     ORCID 上硕士写的是 2023.09 - now，博士起止和硕士毕业时间请核对一下；
-     本科的学院 ORCID 写的是"机械与电子信息学院"，不确定专业名，也请核对。
-     ORCID 上还有一条工作经历：2022.08 - 2023.07 在中国地质大学（武汉）第24届研究生支教团任高中物理教师，
-     要不要单独开一个"Experience"板块放它？ -->
+<!-- TODO(小萌老师): ORCID (0009-0007-5367-047X) 上还有一条经历：
+     2022.08 - 2023.07 在中国地质大学（武汉）第24届研究生支教团任高中物理教师。
+     要不要单独开一个 "Experience" 板块放它？说一声我就加。 -->
 
 <!-- 
   这几个板块暂时留空（导航栏里也先没放），等你发材料过来我再加回来：
