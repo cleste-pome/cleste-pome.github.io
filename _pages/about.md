@@ -75,6 +75,23 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 </div>
 </div>
 
+# 📋 Academic Service
+
+**Conference Reviewer**
+- AAAI Conference on Artificial Intelligence (AAAI)
+- International Joint Conference on Artificial Intelligence (IJCAI)
+- IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+- International Conference on Machine Learning (ICML)
+
+**Journal Reviewer**
+- IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+- IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
+- Information Fusion
+- IEEE Transactions on Knowledge and Data Engineering (TKDE)
+- IEEE Transactions on Multimedia (TMM)
+
+<span class="zh">担任 AAAI、IJCAI、CVPR、ICML 审稿人，以及 IEEE TPAMI、TNNLS、Information Fusion、TKDE、TMM 等期刊审稿人。</span>
+
 <!-- 学位备注（不上网站）：硕士为学术硕士，博士为学术博士。
      网站上只写"硕士/博士学位"即可，不强调学术/专业之分。 -->
 
