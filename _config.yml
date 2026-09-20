@@ -22,8 +22,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Ruimeng Liu (cleste)"
-  # TODO(小萌老师): 把那张兔子照片存成 images/avatar.png，然后这里改成 "images/avatar.png"
-  avatar           : "images/android-chrome-512x512.png"
+  # 头像：3:4 竖版裁剪，原图见仓库根目录（已加入 .gitignore，不会上传）
+  avatar           : "images/avatar.jpg"
   bio              : "Ph.D. Student, Huazhong University of Science and Technology"
   location         : "Wuhan, China"
   employer         :
