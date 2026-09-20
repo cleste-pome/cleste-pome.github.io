@@ -143,6 +143,43 @@
     margin-top: 10px;
     margin-bottom: 20px;
   }
+
+  strong {
+    color: $darker-gray;
+    font-weight: 700;
+  }
+}
+
+// 侧边栏：研究方向区块
+.author__research {
+  white-space: normal;
+  margin-bottom: 1.1em;
+  line-height: 1.55;
+
+  .author__research-label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-size: .72em;
+    color: $gray;
+    margin-bottom: .45em;
+  }
+
+  .author__research-list {
+    strong {
+      color: $darker-gray;
+      font-weight: 700;
+    }
+  }
+
+  .author__research-app {
+    display: block;
+    margin-top: .4em;
+    font-size: .88em;
+    font-style: italic;
+    color: $gray;
+  }
 }
 
 .author__urls-wrapper {
