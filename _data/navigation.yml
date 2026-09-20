@@ -1,4 +1,6 @@
-# main links links
+# 顶部导航栏栏目
+# url 里的 #-xxx 对应 _pages/about.md 里 "# 🔥 News" 这种标题自动生成的锚点
+# 改标题文字时记得同步这里
 main:
   - title: "About Me"
     url: "/#about-me"
@@ -9,14 +11,18 @@ main:
   - title: "Publications"
     url: "/#-publications"
 
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
+  - title: "Projects"
+    url: "/#-projects"
 
   - title: "Educations"
     url: "/#-educations"
 
-  - title: "Invited Talks"
-    url: "/#-invited-talks"
-
-  - title: "Internships"
-    url: "/#-internships"
+  # 有材料后再取消注释：
+  # - title: "Honors and Awards"
+  #   url: "/#-honors-and-awards"
+  #
+  # - title: "Invited Talks"
+  #   url: "/#-invited-talks"
+  #
+  # - title: "Internships"
+  #   url: "/#-internships"

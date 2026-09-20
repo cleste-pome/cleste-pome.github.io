@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "cleste"
-description              : "Personal academic homepage of cleste — multi-view clustering, computer vision."
+title                    : "Ruimeng Liu (cleste)"
+description              : "Personal academic homepage of Ruimeng Liu (cleste), Ph.D. student at Huazhong University of Science and Technology. Research on unsupervised representation learning and multi-view clustering."
 repository               : "cleste-pome/cleste-pome.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -21,14 +21,15 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "cleste"
+  name             : "Ruimeng Liu (cleste)"
+  # TODO(小萌老师): 把那张兔子照片存成 images/avatar.png，然后这里改成 "images/avatar.png"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Huazhong University of Science and Technology"
+  bio              : "Ph.D. Student, Huazhong University of Science and Technology"
   location         : "Wuhan, China"
   employer         :
   pubmed           :
-  googlescholar    : # e.g., "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-  email            : # e.g., "you@example.com"
+  googlescholar    : "https://scholar.google.com/citations?user=aUBNlUUAAAAJ&hl=zh-CN"
+  email            : # TODO(小萌老师): 填上邮箱就会显示邮件图标
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
