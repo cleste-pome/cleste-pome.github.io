@@ -10,14 +10,16 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am **Ruimeng Liu** (刘睿萌), a Ph.D. student at the School of Computer Science and Technology, [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://scholar.google.com/citations?user=Q0B7FmUAAAAJ). I received my Master's and Bachelor's degrees from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/).
+I am **Ruimeng Liu** (刘睿萌), a Ph.D. student at the School of Computer Science and Technology, [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://scholar.google.com/citations?user=quDLqhwAAAAJ). I received my Master's and Bachelor's degrees from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/).
 
 My research focuses on **unsupervised representation learning** and **multi-view clustering**. I am particularly interested in making multi-view learning robust to the messy conditions of real-world data — irregular cross-view sparsity, inconsistent manifolds, and heterogeneous view quality.
 
 Find me on [**GitHub**](https://github.com/cleste-pome) &nbsp;·&nbsp; [**Google Scholar**](https://scholar.google.com/citations?user=aUBNlUUAAAAJ&hl=zh-CN) &nbsp;·&nbsp; [**ORCID**](https://orcid.org/0009-0007-5367-047X)
 
 <!-- TODO(小萌老师): 
-  - 唐厂老师的链接我是猜的占位，请核对（或换成 HUST 主页链接）
+  - 唐厂老师的链接我用的是他的 Google Scholar (user=quDLqhwAAAAJ)，
+    他 Scholar 上的单位还写着中国地质大学，你核对一下要不要换成 HUST 主页：
+    http://faculty.hust.edu.cn/tangchang/en/jsxx/2627181/jsxx/jsxx.htm
   - 邮箱有了告诉我，加在 _config.yml 里 -->
 
 # 🔥 News
