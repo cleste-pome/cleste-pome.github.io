@@ -56,6 +56,23 @@ html[data-theme="dark"] {
     .navicon, .navicon:before, .navicon:after { background: $dk-text; }
   }
 
+  /* 导航折叠出来的下拉菜单（窄屏点汉堡按钮时）。
+     模板默认是白底，深色下不覆盖就会变成"白底 + 浅灰字"，完全看不清。 */
+  .hidden-links {
+    background: $dk-bg-soft;
+    border-color: $dk-border;
+    box-shadow: 0 0 10px rgba(#000, .5);
+
+    a {
+      color: $dk-text;
+
+      &:hover {
+        color: $dk-heading;
+        background: rgba(#fff, .08);
+      }
+    }
+  }
+
   /* 侧边栏 ------------------------------------------------------------ */
   /* 侧边栏链接：小屏下模板把它做成一个浮层（有底色/边框/阴影），
      大屏（≥$large）会重置成透明。深色样式必须跟着做同样的重置，
