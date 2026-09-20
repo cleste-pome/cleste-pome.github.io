@@ -18,19 +18,34 @@
 (function () {
   'use strict';
 
-  var SELECTOR = '.author__avatar, .paper-box-image';
+  // 每类元素单独配置：论文配图比头像大得多，同样的角度在大图上
+  // 视觉位移更明显，所以分开设角度；头像的光斑也刻意做得更小更淡
+  var CONFIG = [
+    {
+      selector : '.author__avatar',
+      maxTilt  : 7,        // 最大倾斜角度
+      glareA   : 0.25,     // 反光中心强度
+      glareS   : 40        // 反光半径(%)
+    },
+    {
+      selector : '.paper-box-image',
+      maxTilt  : 9,
+      glareA   : 0.40,
+      glareS   : 62
+    }
+  ];
+
+  var PERSPECT = 700;    // 透视距离，越小纵深感越强
+  var PRESS_Z  = -26;    // 按住时后退的距离(px)
+  var PRESS_S  = 0.965;  // 按住时缩小的比例
 
   // 无障碍：用户要求减少动态效果时不启用
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   // 触屏设备没有 hover，跳过
   if (window.matchMedia && !window.matchMedia('(hover: hover)').matches) return;
 
-  var MAX_TILT = 7;      // 最大倾斜角度
-  var PERSPECT = 700;    // 透视距离，越小纵深感越强
-  var PRESS_Z  = -26;    // 按住时后退的距离(px)
-  var PRESS_S  = 0.965;  // 按住时缩小的比例
-
-  function attach(box) {
+  function attach(box, cfg) {
+    var MAX_TILT = cfg.maxTilt;
     var img = box.querySelector('img');
     if (!img) return;
 
@@ -38,6 +53,9 @@
     var glare = document.createElement('span');
     glare.className = 'tilt-glare';
     glare.setAttribute('aria-hidden', 'true');
+    // 用 CSS 变量传强度和半径，避免为每种元素写一套 CSS
+    glare.style.setProperty('--glare-a', cfg.glareA);
+    glare.style.setProperty('--glare-s', cfg.glareS + '%');
     box.appendChild(glare);
 
     var rx = 0, ry = 0;          // 当前旋转角
@@ -129,8 +147,10 @@
   }
 
   function init() {
-    var nodes = document.querySelectorAll(SELECTOR);
-    for (var i = 0; i < nodes.length; i++) attach(nodes[i]);
+    CONFIG.forEach(function (cfg) {
+      var nodes = document.querySelectorAll(cfg.selector);
+      for (var i = 0; i < nodes.length; i++) attach(nodes[i], cfg);
+    });
   }
 
   if (document.readyState === 'loading') {
