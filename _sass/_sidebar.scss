@@ -185,7 +185,8 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .06em;
-    font-size: .72em;
+    // 字号与下面的研究方向保持一致（原来是 .72em，比正文小一截）
+    font-size: 1em;
     color: $gray;
     margin-bottom: .45em;
   }
