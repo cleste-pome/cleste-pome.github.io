@@ -83,14 +83,21 @@
   }
 }
 
+/* 访客圆点
+   本次访客用橙色实心 + 光晕突出；其他来源用蓝色小点，跟站内链接色一致 */
 .visitor-dot {
   &__halo {
     fill: #e4572e;
-    opacity: .16;
+    opacity: .18;
   }
 
-  &__core {
+  &--me .visitor-dot__core {
     fill: #e4572e;
+  }
+
+  &--other .visitor-dot__core {
+    fill: #3b7dd8;
+    opacity: .85;
   }
 }
 
