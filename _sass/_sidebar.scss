@@ -138,6 +138,7 @@
 
 .author__bio {
   margin: 0;
+  line-height: 1.5;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -147,6 +148,11 @@
   strong {
     color: $darker-gray;
     font-weight: 700;
+  }
+
+  .author__bio-zh {
+    color: $gray;
+    font-size: .92em;
   }
 }
 
