@@ -185,13 +185,15 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .06em;
-    // 字号与下面的研究方向保持一致（原来是 .72em，比正文小一截）
-    font-size: 1em;
+    // 与下面两行统一为 .88em（原来 .72em）
+    font-size: .88em;
     color: $gray;
     margin-bottom: .45em;
   }
 
   .author__research-list {
+    font-size: .88em;   // 与标签行、Applications 行统一字号
+
     strong {
       color: $darker-gray;
       font-weight: 700;
