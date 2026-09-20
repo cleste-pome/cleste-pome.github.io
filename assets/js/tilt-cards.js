@@ -29,7 +29,7 @@
     },
     {
       selector : '.paper-box-image',
-      maxTilt  : 9,
+      maxTilt  : 11,
       glareA   : 0.40,
       glareS   : 62
     }
