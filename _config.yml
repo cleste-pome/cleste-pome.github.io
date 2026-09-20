@@ -25,7 +25,11 @@ author:
   name_display     : "Ruimeng Liu<br>（刘睿萌）"  # 侧边栏显示：英文名与中文名分两行
   # 头像：3:4 竖版裁剪，原图见仓库根目录（已加入 .gitignore，不会上传）
   avatar           : "images/avatar.jpg"
-  bio              : "Ph.D. Student, Huazhong University of Science and Technology"
+  bio              : "<strong>Ph.D. Student</strong> &middot; Huazhong University of Science and Technology"
+  # 侧边栏"研究方向"区块（支持 HTML）
+  research_label   : "Research Interests"
+  research         : "<strong>Multimodal Representation Learning</strong><br><strong>Self-supervised Learning</strong><br><strong>Interpretability</strong>"
+  research_app     : "Applications: Multimodal Medicine &amp; Computer Vision"
   location         : "Wuhan, China"
   employer         :
   pubmed           :
