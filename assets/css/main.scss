@@ -187,10 +187,12 @@
     opacity: 0;
     z-index: 1;
     transition: opacity .35s ease;
+    // 强度(--glare-a)和半径(--glare-s)由 JS 按元素类型传入：
+    // 头像的光斑刻意比论文配图更小更淡
     background: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%),
-                rgba(255, 255, 255, .40) 0%,
-                rgba(255, 255, 255, .15) 26%,
-                rgba(255, 255, 255, 0)   62%);
+                rgba(255, 255, 255, var(--glare-a, .4)) 0%,
+                rgba(255, 255, 255, calc(var(--glare-a, .4) * .375)) 26%,
+                rgba(255, 255, 255, 0) var(--glare-s, 62%));
     mix-blend-mode: screen;        // 叠加而不是盖住，更像真实反光
 }
 
