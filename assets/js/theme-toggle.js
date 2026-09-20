@@ -54,23 +54,27 @@
     apply(next);
   }
 
-  // 事件委托：不论脚本何时执行、元素何时出现，都能生效
+  function hit(e) {
+    if (!e.target || !e.target.closest) return false;
+    return !!e.target.closest('#theme-toggle');
+  }
+
+  // 事件委托。用捕获阶段（第三个参数 true），确保比 jQuery 那批
+  // 冒泡阶段的处理器（smoothScroll 等）先拿到事件。
   document.addEventListener('click', function (e) {
-    var el = e.target.closest && e.target.closest('#theme-toggle');
-    if (!el) return;
+    if (!hit(e)) return;
     e.preventDefault();
     e.stopPropagation();
     toggle();
-  });
+  }, true);
 
-  // <a> 原生不支持空格触发，补上
+  // span 不像 <a>/<button> 那样原生支持回车和空格，手动补上
   document.addEventListener('keydown', function (e) {
-    if (e.key !== ' ' && e.key !== 'Spacebar') return;
-    var el = e.target.closest && e.target.closest('#theme-toggle');
-    if (!el) return;
+    if (e.key !== 'Enter' && e.key !== ' ' && e.key !== 'Spacebar') return;
+    if (!hit(e)) return;
     e.preventDefault();
     toggle();
-  });
+  }, true);
 
   // 同步一次图标状态（主题本身已由 head 里的内联脚本设好）
   if (document.readyState === 'loading') {

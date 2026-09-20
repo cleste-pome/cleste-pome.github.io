@@ -93,21 +93,52 @@
 
 }
 
-// 深浅色切换
-// 它是导航里的一个 <a>，外观全部继承 .greedy-nav a（颜色、间距、hover 下划线），
-// 这里只补几个 <a> 默认没有的行为
+// 深浅色切换（导航最后一项）
+// 它必须是 <span>，所以不会继承 .greedy-nav a 的样式，
+// 这里手动复刻导航项的全部外观（间距、颜色、hover 下划线），保证看不出差别
 .theme-toggle {
+    display: block;
+    position: relative;
+    margin: 0 1rem;
+    padding: .5rem 0;
+    color: $masthead-link-color;
+    text-decoration: none;
+    white-space: nowrap;
     cursor: pointer;
 
     i {
         font-size: .9em;
     }
 
-    // 键盘可达性：<a> 原生不支持空格触发
+    &:hover {
+        color: $masthead-link-color-hover;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        width: 100%;
+        background: mix(#fff, $primary-color, 50%);
+        transition: $global-transition;
+        transform: scaleX(0);
+    }
+
+    &:hover:before {
+        transform: scaleX(1);
+    }
+
     &:focus-visible {
         outline: 2px solid #3b7dd8;
         outline-offset: 2px;
     }
+}
+
+// 对齐 .visible-links li:last-child a { margin-right: 0 }
+.masthead__menu-item--theme:last-child .theme-toggle {
+    margin-right: 0;
 }
 
 // 论文条目：期刊/会议信息后的括注（CCF-A、一作等）单独占一行
