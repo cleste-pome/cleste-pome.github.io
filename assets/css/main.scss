@@ -93,6 +93,17 @@
 
 }
 
+// 导航项：中英双语标签很长（7 项约 121 字符），1em 字号一行放不下，
+// 会被模板的 "greedy nav" 折叠进汉堡菜单（教育经历就是这么被藏起来的）。
+// 缩小字号 + 收紧间距后能在 1280px 容器里放下，
+// 放得下时 greedy nav 会自动把汉堡按钮也隐藏掉。
+.greedy-nav {
+    a {
+        font-size: .75em;
+        margin: 0 .65rem;
+    }
+}
+
 // 深浅色切换：固定在导航栏右上角，不进折叠菜单
 // 它必须是 <span>（原因见 _includes/masthead.html 的注释），
 // 样式全部手写，模仿导航链接的观感
@@ -127,7 +138,7 @@
 
     color: $masthead-link-color;
     font-family: $sans-serif;
-    font-size: $type-size-7;
+    font-size: .75em;   // 与 .greedy-nav a 保持一致
     white-space: nowrap;
     cursor: pointer;
     user-select: none;
