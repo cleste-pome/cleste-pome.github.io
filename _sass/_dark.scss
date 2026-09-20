@@ -91,6 +91,18 @@ html[data-theme="dark"] {
     }
   }
 
+  /* 侧边栏链接图标：模板给社交图标写死了品牌色，深色底上完全看不见
+       .social-icons .fa        → #000（纯黑，比如地点图标）
+       .social-icons .fa-github → #171516（近黑）
+     这里统一改成跟随文字颜色。用 [class*="fa-"] 覆盖品牌色规则，
+     深色样式在 main.scss 最后导入，同优先级下靠后生效。 */
+  .social-icons {
+    .fa, .fas, .far, .fab, .ai,
+    [class*="fa-"] {
+      color: inherit;
+    }
+  }
+
   .author__name,
   .author__bio strong         { color: $dk-heading; }
   .author__bio,
