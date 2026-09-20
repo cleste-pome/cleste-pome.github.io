@@ -90,6 +90,15 @@
 
 }
 
+// 中英双语：中文对照行
+.zh {
+    display: block;
+    margin-top: .35em;
+    color: #7a8288;
+    font-size: .93em;
+    line-height: 1.55;
+}
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 
