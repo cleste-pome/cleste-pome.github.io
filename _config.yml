@@ -28,7 +28,7 @@ author:
   bio              : "<strong>Ph.D. Student</strong> &middot; Huazhong University of Science and Technology<br><span class='author__bio-zh'>博士研究生 &middot; <a href='https://www.hust.edu.cn/'>华中科技大学</a></span>"
   # 侧边栏"研究方向"区块（支持 HTML）
   research_label   : "🔬 Research Interests"
-  research         : "<strong>Multimodal Representation Learning</strong><br><strong>Self-supervised Learning</strong><br><strong>Interpretability</strong>"
+  research         : "<strong>Multimodal Representation Learning</strong>"
   research_app     : "🎯 Applications: Multimodal Medicine &amp; Computer Vision"
   location         : "Wuhan, China"
   employer         :
