@@ -9,14 +9,19 @@
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
           <!-- 深浅色切换。
-               故意用 <a> 而不是 <button>：导航脚本用 $("#site-nav button") 抓按钮，
-               用 <button> 会被当成汉堡菜单按钮绑上事件、并套上灰色实心块样式。
-               用 <a> 还能自动继承 .greedy-nav a 的导航项样式。 -->
+               这里必须用 <span>，不能用 <button> 也不能用 <a>，
+               因为模板自带的脚本会把两者都劫持掉：
+                 · $("#site-nav button")  → 把任何 button 当成汉堡菜单按钮，
+                                            绑上"展开菜单"事件并套上灰色实心块样式
+                 · $("a").smoothScroll()  → 给每个 <a> 绑平滑滚动，
+                                            href="#" 会导致点一下页面跳回顶部
+               用 <span role="button" tabindex="0"> 两边都躲开，
+               键盘可达性由 tabindex + JS 里的 Enter/Space 处理补上。 -->
           <li class="masthead__menu-item masthead__menu-item--theme">
-            <a id="theme-toggle" class="theme-toggle" href="#" role="button"
-               aria-label="切换深色 / 浅色模式" title="切换深色 / 浅色模式">
+            <span id="theme-toggle" class="theme-toggle" role="button" tabindex="0"
+                  aria-label="切换深色 / 浅色模式" title="切换深色 / 浅色模式">
               <i class="fas fa-moon" aria-hidden="true"></i><span class="theme-toggle__label"> Dark (暗色)</span>
-            </a>
+            </span>
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
