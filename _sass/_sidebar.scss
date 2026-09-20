@@ -153,6 +153,12 @@
   .author__bio-zh {
     color: $gray;
     font-size: .92em;
+
+    a {
+      color: #3b7dd8;
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
   }
 }
 

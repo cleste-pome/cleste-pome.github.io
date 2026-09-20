@@ -97,6 +97,18 @@
     color: #7a8288;
     font-size: .93em;
     line-height: 1.55;
+
+    // 中文行里的链接保持链接色，不被灰色压掉
+    a {
+        color: #3b7dd8;
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+    }
+
+    strong {
+        color: #4a5057;
+        font-weight: 700;
+    }
 }
 
 $scroll_offset : 2em;
