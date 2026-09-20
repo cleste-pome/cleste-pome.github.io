@@ -27,9 +27,9 @@ author:
   avatar           : "images/avatar.jpg"
   bio              : "<strong>Ph.D. Student</strong> &middot; Huazhong University of Science and Technology<br><span class='author__bio-zh'>博士研究生 &middot; 华中科技大学</span>"
   # 侧边栏"研究方向"区块（支持 HTML）
-  research_label   : "Research Interests"
+  research_label   : "🔬 Research Interests"
   research         : "<strong>Multimodal Representation Learning</strong><br><strong>Self-supervised Learning</strong><br><strong>Interpretability</strong>"
-  research_app     : "Applications: Multimodal Medicine &amp; Computer Vision"
+  research_app     : "🎯 Applications: Multimodal Medicine &amp; Computer Vision"
   location         : "Wuhan, China"
   employer         :
   pubmed           :
