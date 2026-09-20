@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Ruimeng Liu (cleste)"
-description              : "Personal academic homepage of Ruimeng Liu (cleste), Ph.D. student at Huazhong University of Science and Technology. Research on unsupervised representation learning and multi-view clustering."
+title                    : "Ruimeng Liu"
+description              : "Personal academic homepage of Ruimeng Liu, Ph.D. student at Huazhong University of Science and Technology. Research on unsupervised representation learning and multi-view clustering."
 repository               : "cleste-pome/cleste-pome.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -21,7 +21,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Ruimeng Liu (cleste)"
+  name             : "Ruimeng Liu (刘睿萌)"
   # 头像：3:4 竖版裁剪，原图见仓库根目录（已加入 .gitignore，不会上传）
   avatar           : "images/avatar.jpg"
   bio              : "Ph.D. Student, Huazhong University of Science and Technology"
