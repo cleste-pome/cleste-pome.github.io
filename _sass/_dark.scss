@@ -57,12 +57,21 @@ html[data-theme="dark"] {
   }
 
   /* 侧边栏 ------------------------------------------------------------ */
+  /* 侧边栏链接：小屏下模板把它做成一个浮层（有底色/边框/阴影），
+     大屏（≥$large）会重置成透明。深色样式必须跟着做同样的重置，
+     否则大屏深色下会多出一个莫名其妙的背景框。 */
   .author__urls {
     background: $dk-bg-soft;
     border-color: $dk-border;
     box-shadow: 0 0 10px rgba(#000, .5);
 
     &:after { border-color: $dk-bg-soft transparent; }
+
+    @include breakpoint($large) {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+    }
   }
 
   .author__name,
