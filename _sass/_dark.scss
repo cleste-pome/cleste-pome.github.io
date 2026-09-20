@@ -140,7 +140,13 @@ html[data-theme="dark"] {
     fill: $dk-link;
   }
 
-  /* 切换项本身
-     它就是导航里的一个 <a>，颜色已经被上面的 .greedy-nav a 接管，
-     这里不用再单独上色，否则会盖掉导航项统一的 hover 效果 */
+  /* 切换项本身（在导航栏右上角，不是导航项） */
+  .theme-toggle {
+    color: $dk-text-soft;
+
+    &:hover {
+      color: $dk-heading;
+      background-color: rgba(#fff, .08);
+    }
+  }
 }
