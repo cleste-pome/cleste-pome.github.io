@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am **Ruimeng Liu** (刘睿萌), you can call me **cleste**. I am a Ph.D. student at [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://scholar.google.com/citations?user=Q0B7FmUAAAAJ). I received my Bachelor's and Master's degrees from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/).
+I am **Ruimeng Liu** (刘睿萌), a Ph.D. student at [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://scholar.google.com/citations?user=Q0B7FmUAAAAJ). I received my Bachelor's and Master's degrees from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/).
 
 My research focuses on **unsupervised representation learning** and **multi-view clustering**. I am particularly interested in making multi-view learning robust to the messy conditions of real-world data — irregular cross-view sparsity, inconsistent manifolds, and heterogeneous view quality.
 
