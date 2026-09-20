@@ -27,7 +27,7 @@
   // 触屏设备没有 hover，跳过
   if (window.matchMedia && !window.matchMedia('(hover: hover)').matches) return;
 
-  var MAX_TILT  = 14;    // 最大倾斜角度
+  var MAX_TILT  = 10;    // 最大倾斜角度
   var PERSPECT  = 700;   // 透视距离，越小纵深感越强
   var PRESS_Z   = -26;   // 按住时后退的距离(px)
   var PRESS_S   = 0.965; // 按住时缩小的比例
