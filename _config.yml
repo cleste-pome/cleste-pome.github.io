@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Ruimeng Liu"
-description              : "Personal academic homepage of Ruimeng Liu, Ph.D. student at Huazhong University of Science and Technology. Research on unsupervised representation learning and multi-view clustering."
+description              : "Multimodal representation learning and self-supervised learning, focusing on interpretability and applications in multimodal medicine and computer vision."
 repository               : "cleste-pome/cleste-pome.github.io"
 google_scholar_stats_use_cdn : true
 
