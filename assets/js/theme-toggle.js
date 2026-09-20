@@ -39,11 +39,11 @@
     if (theme === 'dark') {
       // 当前是深色，点一下回浅色 → 显示太阳和"浅色"
       if (icon)  icon.className = 'fas fa-sun';
-      if (label) label.textContent = ' Light (浅色)';
+      if (label) label.textContent = 'Light';
       el.setAttribute('aria-pressed', 'true');
     } else {
       if (icon)  icon.className = 'fas fa-moon';
-      if (label) label.textContent = ' Dark (暗色)';
+      if (label) label.textContent = 'Dark';
       el.setAttribute('aria-pressed', 'false');
     }
   }
