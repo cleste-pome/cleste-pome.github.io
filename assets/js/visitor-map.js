@@ -29,7 +29,7 @@
   function ckey(cc) { return 'c-' + cc; }
 
   var COUNTRY  = ["CN","US","GB","DE","JP","KR","AU","CA","FR","IN","NL","CH","SE","IT","ES","BR","RU","TW","PL","TR"];
-  var CENTROID = {"CN":[33.45,35.31],"US":[-99.31,37.24],"GB":[-1.75,54.22],"DE":[10.43,51.43],"JP":[138.35,36.09],"KR":[127.9,36.21],"AU":[133.06,-24.84],"CA":[-110.24,56.7],"FR":[2.1,46.9],"IN":[79.18,21.87],"NL":[5.4,52.04],"CH":[8.29,46.81],"SE":[14.79,62.27],"IT":[12.63,42.56],"ES":[-3.52,39.92],"BR":[-49.71,-14.07],"RU":[88.6,59.41],"TW":[120.99,23.98],"PL":[19.08,51.88],"TR":[35.45,38.63]};
+  var CENTROID = {"CN":[98.77,36.8],"US":[-99.31,37.24],"GB":[-1.75,54.22],"DE":[10.43,51.43],"JP":[138.35,36.09],"KR":[127.9,36.21],"AU":[133.06,-24.84],"CA":[-110.24,56.7],"FR":[2.1,46.9],"IN":[79.18,21.87],"NL":[5.4,52.04],"CH":[8.29,46.81],"SE":[14.79,62.27],"IT":[12.63,42.56],"ES":[-3.52,39.92],"BR":[-49.71,-14.07],"RU":[88.6,59.41],"TW":[120.99,23.98],"PL":[19.08,51.88],"TR":[35.45,38.63]};
 
   function toXY(lon, lat) {
     return [ (lon + 180) * (MAP_W / 360), (90 - lat) * (MAP_H / 180) ];
@@ -44,18 +44,25 @@
   function bump(key) { return req('/hit/' + NS + '/' + key).then(function (j) { return j && j.value ? j.value : 0; }); }
   function read(key) { return req('/get/' + NS + '/' + key).then(function (j) { return j && j.value ? j.value : 0; }); }
 
-  function visitorCountry() {
-    return fetch('https://www.cloudflare.com/cdn-cgi/trace', { cache: 'no-store' })
-      .then(function (r) { return r.text(); })
-      .then(function (t) {
-        var m = /^loc=([A-Z]{2})$/m.exec(t);
-        if (m && m[1] !== 'XX' && m[1] !== 'T1') return m[1];
-        throw new Error('no loc');
+  // 取访客信息。ipwho.is 能同时给出国家码和经纬度，优先用它；
+  // 失败退回 Cloudflare trace（只有国家码，没有坐标）。
+  // 坐标只用在本机画"我"这一个点，不发送、不存储。
+  function visitorInfo() {
+    return fetch('https://ipwho.is/', { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (j && j.country_code) {
+          return { cc: j.country_code, lat: j.latitude, lon: j.longitude };
+        }
+        throw new Error('ipwho failed');
       })
       .catch(function () {
-        return fetch('https://ipwho.is/', { cache: 'no-store' })
-          .then(function (r) { return r.json(); })
-          .then(function (j) { return j && j.country_code; })
+        return fetch('https://www.cloudflare.com/cdn-cgi/trace', { cache: 'no-store' })
+          .then(function (r) { return r.text(); })
+          .then(function (t) {
+            var m = /^loc=([A-Z]{2})$/m.exec(t);
+            return (m && m[1] !== 'XX' && m[1] !== 'T1') ? { cc: m[1], lat: null, lon: null } : null;
+          })
           .catch(function () { return null; });
       });
   }
@@ -86,7 +93,8 @@
   }
 
   /* 画图 ---------------------------------------------------------------- */
-  function render(svg, counts, total, myCC) {
+  function render(svg, counts, total, me) {
+    var myCC = me && me.cc;
     var ns = 'http://www.w3.org/2000/svg';
     var max = 1;
     Object.keys(counts).forEach(function (c) { if (counts[c] > max) max = counts[c]; });
@@ -100,7 +108,10 @@
       var n = counts[code];
       if (!n || !CENTROID[code]) return;
       var isMe = (code === myCC);
-      var xy = toXY(CENTROID[code][0], CENTROID[code][1]);
+      // 自己：优先用真实经纬度；其他国家：用国家质心
+      var xy = (isMe && me.lat != null && me.lon != null)
+             ? toXY(me.lon, me.lat)
+             : toXY(CENTROID[code][0], CENTROID[code][1]);
       // 本次访客：明显大一点；其他国家：随数量温和放大
       var r = isMe ? 7 : 2.6 + 3.4 * Math.sqrt(n / max);
 
@@ -131,8 +142,8 @@
     var svg = document.querySelector('.visitor-map__dots');
     if (!svg) return;
 
-    visitorCountry().then(function (cc) {
-      var my = (cc && /^[A-Z]{2}$/.test(cc)) ? cc : null;
+    visitorInfo().then(function (me) {
+      var my = (me && me.cc && /^[A-Z]{2}$/.test(me.cc)) ? me.cc : null;
       var jobs = [ bump(TOTAL) ];
       if (my) jobs.push(bump(ckey(my)));
 
@@ -143,7 +154,7 @@
         var cached = loadCache();
         if (cached) {
           if (my && mine > 0) cached[my] = mine;
-          render(svg, cached, total, my);
+          render(svg, cached, total, me);
           return;
         }
 
@@ -152,7 +163,7 @@
         readAll(list).then(function (counts) {
           if (my && mine > 0) counts[my] = mine;
           saveCache(counts);
-          render(svg, counts, total, my);
+          render(svg, counts, total, me);
         });
       });
     });
