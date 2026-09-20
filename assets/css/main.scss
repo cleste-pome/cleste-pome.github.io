@@ -127,14 +127,14 @@
 
     color: $masthead-link-color;
     font-family: $sans-serif;
-    font-size: $type-size-7;
+    font-size: .85em;
     white-space: nowrap;
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
 
     i {
-        font-size: 1.4em;   // 图标放大
+        font-size: 1.35em;   // 图标放大
     }
 
     .theme-toggle__label {

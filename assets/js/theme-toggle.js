@@ -36,14 +36,15 @@
     var icon  = el.querySelector('i');
     var label = el.querySelector('.theme-toggle__label');
 
+    // 标签显示的是【当前】模式，不是点一下会变成什么：
+    //   明亮模式 → ☀️ Light      深色模式 → 🌙 Dark
     if (theme === 'dark') {
-      // 当前是深色，点一下回浅色 → 显示太阳和"浅色"
-      if (icon)  icon.className = 'fas fa-sun';
-      if (label) label.textContent = 'Light';
-      el.setAttribute('aria-pressed', 'true');
-    } else {
       if (icon)  icon.className = 'fas fa-moon';
       if (label) label.textContent = 'Dark';
+      el.setAttribute('aria-pressed', 'true');
+    } else {
+      if (icon)  icon.className = 'fas fa-sun';
+      if (label) label.textContent = 'Light';
       el.setAttribute('aria-pressed', 'false');
     }
   }
