@@ -33,7 +33,7 @@ redirect_from:
 
 ## 2026
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><img src='images/papers/gmae-framework.png' alt="GMAE" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><picture><source srcset='images/papers/gmae-framework.avif' type="image/avif"><img src='images/papers/gmae-framework.png' alt="GMAE" width="100%"></picture></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Learning Disentangled Representations for Generalized Multi-view Clustering**
@@ -49,7 +49,7 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 <!-- 
   小萌老师要求：MASA 这篇还在返修中，先不展示。等录用后把下面这段取消注释即可。
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><img src='images/papers/masa-framework.png' alt="MASA" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><picture><source srcset='images/papers/masa-framework.avif' type="image/avif"><img src='images/papers/masa-framework.png' alt="MASA" width="100%"></picture></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Towards Robust Multi-View Clustering via Early-to-late Manifold Consistency Calibration**
@@ -66,7 +66,7 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 
 ## 2025
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/papers/sparsemvc-method.png' alt="SparseMVC" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><picture><source srcset='images/papers/sparsemvc-method.avif' type="image/avif"><img src='images/papers/sparsemvc-method.png' alt="SparseMVC" width="100%"></picture></div></div>
 <div class='paper-box-text' markdown="1">
 
 **SparseMVC: Probing Cross-view Sparsity Variations for Multi-view Clustering**
