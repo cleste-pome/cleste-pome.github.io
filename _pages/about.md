@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# 👋 About Me
+# 🙋 About Me
 
 I am **Ruimeng Liu** (刘睿萌), pursuing the Ph.D. degree with the School of Computer Science and Technology, [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://tangchang.net/). I received the B.Eng. degree in Mechanical Design, Manufacturing, and Automation from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/) in 2022, and the M.Eng. degree in Computer Science from the same university in 2026.
 
