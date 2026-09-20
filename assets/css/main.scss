@@ -40,6 +40,9 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+// 深色模式放最后，保证能覆盖前面的规则
+@import "dark";
+
 .paper-box {
     display: flex;
     justify-content: left;
@@ -88,6 +91,52 @@
     }
 
 
+}
+
+// 深浅色切换按钮（导航栏右上角）
+// 用绝对定位挂在 .masthead 上，并在导航里留出右边距，避免压住菜单项
+.masthead {
+    position: relative;
+
+    .greedy-nav {
+        padding-right: 2.8em;
+    }
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 50%;
+    right: .6em;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #7a8288;
+    font-size: 1em;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 30;
+    transition: background-color .2s, color .2s;
+
+    &:hover {
+        color: #494e52;
+        background-color: rgba(0, 0, 0, .06);
+    }
+
+    &:focus-visible {
+        outline: 2px solid #3b7dd8;
+        outline-offset: 2px;
+    }
+
+    @include breakpoint($medium) {
+        right: 1.2em;
+    }
 }
 
 // 论文条目：期刊/会议信息后的括注（CCF-A、一作等）单独占一行
