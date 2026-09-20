@@ -21,7 +21,7 @@ redirect_from:
 
 # 📢 News
 - *2026.09*: &nbsp;🎉🎉 Our paper **GMAE** is accepted by **IEEE TPAMI**.
-- *2025.09*: &nbsp;🎉🎉 Our paper **SparseMVC** is accepted by **NeurIPS 2025** as a **Spotlight**.
+- *2025.09*: &nbsp;🎉🎉 Our paper **SparseMVC** is accepted by **NeurIPS 2025** as a **Spotlight** <span class="pub-highlight">(688/21575, Top 3.19%)</span>.
 
 <!-- 顺序：最新在最上面
      MASA 录用后，在这里加一条
