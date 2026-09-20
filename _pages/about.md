@@ -62,7 +62,7 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 
 -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025 Spotlight</div><img src='images/papers/sparsemvc-method.png' alt="SparseMVC" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/papers/sparsemvc-method.png' alt="SparseMVC" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **SparseMVC: Probing Cross-view Sparsity Variations for Multi-view Clustering**

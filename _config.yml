@@ -65,6 +65,13 @@ author:
   wikipedia        :
 
 
+# 页脚访客地图
+# 拿到第三方服务的嵌入代码后（粘贴到 _includes/footer.html），把 enabled 改成 true
+visitor_map:
+  enabled  : false
+  title    : "🌍 Visitors"
+  subtitle : "Where readers come from"
+
 # Reading Files
 include:
   - .htaccess

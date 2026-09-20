@@ -1,0 +1,31 @@
+<!--
+  页脚 / 访客地图
+  ---------------------------------------------------------------
+  这是一个静态站点，本身没法记录访客来源，必须借助第三方服务。
+  拿到第三方给的嵌入代码后：
+    1. 粘贴到下面 <div class="visitor-footer__map"> 里的标记处
+    2. 把 _config.yml 里的 visitor_map.enabled 改成 true
+  详细步骤见 README 的「访客地图」一节。
+  ---------------------------------------------------------------
+-->
+{% if site.visitor_map.enabled %}
+<footer class="visitor-footer" role="contentinfo">
+  <div class="visitor-footer__inner">
+
+    {% if site.visitor_map.title %}
+      <h4 class="visitor-footer__title">{{ site.visitor_map.title }}</h4>
+    {% endif %}
+
+    {% if site.visitor_map.subtitle %}
+      <p class="visitor-footer__subtitle">{{ site.visitor_map.subtitle }}</p>
+    {% endif %}
+
+    <div class="visitor-footer__map">
+      <!-- ▼▼▼ 访客地图嵌入代码粘贴处 ▼▼▼ -->
+
+      <!-- ▲▲▲ 粘贴结束 ▲▲▲ -->
+    </div>
+
+  </div>
+</footer>
+{% endif %}
