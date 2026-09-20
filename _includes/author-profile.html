@@ -11,23 +11,20 @@
   <div class="author__content">
     <h3 class="author__name">{{ author.name_display | default: author.name }}</h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.research %}
+      <div class="author__research">
+        <span class="author__research-label">{{ author.research_label | default: "Research" }}</span>
+        <div class="author__research-list">{{ author.research }}</div>
+        {% if author.research_app %}
+          <div class="author__research-app">{{ author.research_app }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
-      {% if author.research %}
-        <li class="author__research">
-          <i class="fas fa-fw fa-flask" aria-hidden="true"></i>
-          <div>
-            <span class="author__research-label">{{ author.research_label | default: "Research" }}</span>
-            <div class="author__research-list">{{ author.research }}</div>
-            {% if author.research_app %}
-              <div class="author__research-app">{{ author.research_app }}</div>
-            {% endif %}
-          </div>
-        </li>
-      {% endif %}
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
       {% endif %}
