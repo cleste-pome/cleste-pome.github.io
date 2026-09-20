@@ -69,7 +69,7 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 
 **Ruimeng Liu**, Xin Zou, Chang Tang, Xiao Zheng, Xingchen Hu, Kun Sun, Xinwang Liu
 
-*Advances in Neural Information Processing Systems (NeurIPS), 2025.*<span class="pub-note">(CCF-A, <strong>first author</strong>, <strong>Spotlight</strong>)</span>
+*Advances in Neural Information Processing Systems (NeurIPS), 2025.*<span class="pub-note">(CCF-A, <strong>first author</strong>) &nbsp;&middot;&nbsp; <span class="pub-highlight">Spotlight (688/21575, Top 3.6%)</span></span>
 
 [\[Paper\]](https://proceedings.neurips.cc/paper_files/paper/2025/file/e366fff693ee7cdbca8ed2764bc18a71-Paper-Conference.pdf) &nbsp; [\[Code\]](https://github.com/cleste-pome/SparseMVC)
 </div>
