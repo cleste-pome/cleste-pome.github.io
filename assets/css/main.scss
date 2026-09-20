@@ -103,10 +103,11 @@
 .masthead {
     position: relative;
 
-    // 给右上角的切换图标让出位置。只放一个图标，占位很小，
-    // 不至于把导航挤到折叠（导航自己是刚好放得下的）
+    // 给右上角的切换项（图标 + 文字）让出位置。
+    // 注意：这里留太多会把导航挤溢出，末尾几项会被折叠进汉堡菜单，
+    // 所以只留图标 + "Dark" 这几个字符的宽度
     .greedy-nav {
-        padding-right: 2.6em;
+        padding-right: 4.2em;
     }
 }
 
@@ -133,7 +134,12 @@
     -webkit-user-select: none;
 
     i {
-        font-size: .95em;
+        font-size: 1.4em;   // 图标放大
+    }
+
+    .theme-toggle__label {
+        font-size: 1em;
+        letter-spacing: .01em;
     }
 
     &:hover {
