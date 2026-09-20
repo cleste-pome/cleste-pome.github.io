@@ -90,6 +90,19 @@
 
 }
 
+// 论文条目：期刊/会议信息后的括注（CCF-A、一作等）单独占一行
+.pub-note {
+    display: block;
+    margin-top: .15em;
+    color: #7a8288;
+    font-size: .92em;
+
+    strong {
+        color: #4a5057;
+        font-weight: 700;
+    }
+}
+
 // 中英双语：中文对照行
 .zh {
     display: block;

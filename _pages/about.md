@@ -38,9 +38,9 @@ redirect_from:
 
 Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwang Liu, Kunlun He, Wanqing Li
 
-*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.* (CCF-A, **co-first author**)
+*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.*<span class="pub-note">(CCF-A, <strong>co-first author</strong>)</span>
 
-[\[Paper\]](https://ieeexplore.ieee.org/document/11494292/) &nbsp; [\[Code\]](https://github.com/cleste-pome/GMAE)
+[\[Paper\]](https://ieeexplore.ieee.org/document/11494292/) &nbsp; [\[Code\]](https://github.com/obananas/GMAE)
 </div>
 </div>
 
@@ -54,7 +54,7 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 
 **Ruimeng Liu**, Chang Tang, Bo Wang, Zhenglai Li, Lianbo Guo, Xinwang Liu
 
-*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.* (CCF-A, **first author**)
+*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.*<span class="pub-note">(CCF-A, <strong>first author</strong>)</span>
 
 [\[Code\]](https://github.com/cleste-pome/MASA)
 </div>
@@ -69,7 +69,7 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 
 **Ruimeng Liu**, Xin Zou, Chang Tang, Xiao Zheng, Xingchen Hu, Kun Sun, Xinwang Liu
 
-*Advances in Neural Information Processing Systems (NeurIPS), 2025.* (CCF-A, **first author**, **Spotlight**)
+*Advances in Neural Information Processing Systems (NeurIPS), 2025.*<span class="pub-note">(CCF-A, <strong>first author</strong>, <strong>Spotlight</strong>)</span>
 
 [\[Paper\]](https://proceedings.neurips.cc/paper_files/paper/2025/file/e366fff693ee7cdbca8ed2764bc18a71-Paper-Conference.pdf) &nbsp; [\[Code\]](https://github.com/cleste-pome/SparseMVC)
 </div>
