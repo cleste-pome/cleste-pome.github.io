@@ -12,21 +12,18 @@ redirect_from:
 
 # 🙋 About Me
 
-I am **Ruimeng Liu** (刘睿萌), pursuing the Ph.D. degree with the School of Computer Science and Technology, [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://tangchang.net/). I received the B.Eng. degree in Mechanical Design, Manufacturing, and Automation from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/) in 2022, and the M.Eng. degree in Computer Science from the same university in 2026.
-
-My research interests include **multimodal representation learning** and **self-supervised learning**, focusing on **interpretability** and applications in **multimodal medicine** and **computer vision**.
+**Ruimeng Liu** (刘睿萌) is pursuing the Ph.D. degree with the School of Computer Science and Technology, [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://tangchang.net/). He received the B.Eng. degree in Mechanical Design, Manufacturing, and Automation from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/) in 2022, and the M.Eng. degree in Computer Science from the same university in 2026. His research interests include **multimodal representation learning** and **self-supervised learning**, focusing on **interpretability** and applications in **multimodal medicine** and **computer vision**.
 
 <!-- 唐厂老师链接：https://tangchang.net/ （已按小萌老师要求替换）
      邮箱 liuruimeng@hust.edu.cn 已加到 _config.yml，侧边栏会显示 -->
 
-# 🔥 News
+# 📢 News
 - *2026.09*: &nbsp;🎉🎉 Our paper **GMAE** is accepted by **IEEE TPAMI**.
 - *2025.09*: &nbsp;🎉🎉 Our paper **SparseMVC** is accepted by **NeurIPS 2025** as a **Spotlight**.
 
-<!-- TODO(小萌老师): 两件事要你确认：
-     1. SparseMVC 的录用月份我写的是 2025.09（NeurIPS 通常 9 月放榜），请核对
-     2. MASA 目前是"返修中"，录用后加一条到这里
-     3. 顺序已按你说的：最新在最上面 -->
+<!-- 顺序：最新在最上面
+     MASA 录用后，在这里加一条
+     News 锚点是 #-news，如果改标题文字记得同步 _data/navigation.yml -->
 
 # 📝 Publications
 
