@@ -48,6 +48,9 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 </div>
 </div>
 
+<!-- 
+  小萌老师要求：MASA 这篇还在返修中，先不展示。等录用后把下面这段取消注释即可。
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><img src='images/papers/masa-framework.png' alt="MASA" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -55,11 +58,13 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 
 **Ruimeng Liu**, Chang Tang, Bo Wang, Zhenglai Li, Lianbo Guo, Xinwang Liu
 
-*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.* (CCF-A, **first author**, under revision)
+*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.* (CCF-A, **first author**)
 
 [\[Code\]](https://github.com/cleste-pome/MASA)
 </div>
 </div>
+
+-->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025 Spotlight</div><img src='images/papers/sparsemvc-method.png' alt="SparseMVC" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
