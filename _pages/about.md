@@ -61,7 +61,7 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025 Spotlight</div><img src='images/papers/sparsemvc-framework.png' alt="SparseMVC" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025 Spotlight</div><img src='images/papers/sparsemvc-method.png' alt="SparseMVC" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **SparseMVC: Probing Cross-view Sparsity Variations for Multi-view Clustering**
@@ -82,7 +82,7 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 
 # 💻 Projects
 
-- *2024.06 - 2026.06*, **多场景下跨模态数据融合的检索技术研究**, 中央高校基本科研业务费——大学生自主创新资助计划（项目编号：2024XLB7），资助 3 万元，**已结题，主持**.
+- *2024.06 - 2026.06*, **多场景下跨模态数据融合的检索技术研究**, 中央高校基本科研业务费——大学生自主创新资助计划（项目编号：2024XLB7），**已结题，主持**.
 
 <!-- TODO(小萌老师): 还有别的项目就按上面格式加 -->
 
