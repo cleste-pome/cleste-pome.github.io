@@ -93,16 +93,9 @@
 
 }
 
-// 导航项：中英双语标签很长（7 项约 121 字符），1em 字号一行放不下，
-// 会被模板的 "greedy nav" 折叠进汉堡菜单（教育经历就是这么被藏起来的）。
-// 缩小字号 + 收紧间距后能在 1280px 容器里放下，
-// 放得下时 greedy nav 会自动把汉堡按钮也隐藏掉。
-.greedy-nav {
-    a {
-        font-size: .75em;
-        margin: 0 .65rem;
-    }
-}
+// 导航项样式完全保持模板原样，不做任何修改。
+// 之前教育经历被折叠，是因为切换按钮占了 8em 宽度把导航挤溢出了；
+// 现在改成纯图标，只占 2.6em，导航恢复原来的宽松布局。
 
 // 深浅色切换：固定在导航栏右上角，不进折叠菜单
 // 它必须是 <span>（原因见 _includes/masthead.html 的注释），
@@ -110,15 +103,10 @@
 .masthead {
     position: relative;
 
-    // 给右上角的切换项让出位置，避免压住菜单项和汉堡按钮。
-    // 窄屏只显示图标，宽屏才显示文字，所以留白分两档
-    // （breakpoint($small) 是"≥600px"）
+    // 给右上角的切换图标让出位置。只放一个图标，占位很小，
+    // 不至于把导航挤到折叠（导航自己是刚好放得下的）
     .greedy-nav {
-        padding-right: 3.5em;
-
-        @include breakpoint($small) {
-            padding-right: 8em;
-        }
+        padding-right: 2.6em;
     }
 }
 
@@ -138,7 +126,7 @@
 
     color: $masthead-link-color;
     font-family: $sans-serif;
-    font-size: .75em;   // 与 .greedy-nav a 保持一致
+    font-size: $type-size-7;
     white-space: nowrap;
     cursor: pointer;
     user-select: none;
@@ -158,14 +146,6 @@
         outline-offset: 2px;
     }
 
-    // 窄屏只留图标，宽屏才显示"Dark (暗色)"文字
-    .theme-toggle__label {
-        display: none;
-
-        @include breakpoint($small) {
-            display: inline;
-        }
-    }
 }
 
 // 论文条目：期刊/会议信息后的括注（CCF-A、一作等）单独占一行
