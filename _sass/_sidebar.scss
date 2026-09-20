@@ -151,14 +151,22 @@
 }
 
 // 侧边栏：研究方向区块
-// 注意：.author__urls li 上有 white-space: nowrap（优先级 0,1,1），
-// 这里必须用 0,2,1 的选择器覆盖，否则文字不换行会溢出到右侧正文
-.author__urls li.author__research {
+// 放在 .author__content 内（display:block; width:100%），
+// 不要放进 .author__urls —— 那里的 li 带 white-space: nowrap 且父级是 table-cell，
+// 长文本会撑宽整个侧边栏、溢出到右侧正文
+.author__research {
   white-space: normal;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  margin-bottom: 1.1em;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 1.1em 0;
   line-height: 1.55;
+
+  > div {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
 
   .author__research-label {
     display: block;
