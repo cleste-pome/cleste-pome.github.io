@@ -27,7 +27,7 @@ redirect_from:
 
 # 📝 Publications
 
-*(newest first)*
+<!-- 排序：最新发表的放在最上面 -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><img src='images/papers/gmae-framework.png' alt="GMAE" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
