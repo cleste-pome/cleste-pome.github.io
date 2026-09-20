@@ -93,49 +93,20 @@
 
 }
 
-// 深浅色切换按钮（导航栏右上角）
-// 用绝对定位挂在 .masthead 上，并在导航里留出右边距，避免压住菜单项
-.masthead {
-    position: relative;
-
-    .greedy-nav {
-        padding-right: 2.8em;
-    }
-}
-
+// 深浅色切换
+// 它是导航里的一个 <a>，外观全部继承 .greedy-nav a（颜色、间距、hover 下划线），
+// 这里只补几个 <a> 默认没有的行为
 .theme-toggle {
-    position: absolute;
-    top: 50%;
-    right: .6em;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2em;
-    height: 2em;
-    padding: 0;
-    border: 0;
-    border-radius: 50%;
-    background: transparent;
-    color: #7a8288;
-    font-size: 1em;
-    line-height: 1;
     cursor: pointer;
-    z-index: 30;
-    transition: background-color .2s, color .2s;
 
-    &:hover {
-        color: #494e52;
-        background-color: rgba(0, 0, 0, .06);
+    i {
+        font-size: .9em;
     }
 
+    // 键盘可达性：<a> 原生不支持空格触发
     &:focus-visible {
         outline: 2px solid #3b7dd8;
         outline-offset: 2px;
-    }
-
-    @include breakpoint($medium) {
-        right: 1.2em;
     }
 }
 
