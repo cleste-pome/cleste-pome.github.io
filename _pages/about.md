@@ -14,7 +14,7 @@ redirect_from:
 
 **Ruimeng Liu** (刘睿萌) is pursuing the Ph.D. degree with the School of Computer Science and Technology, [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), Wuhan, China, supervised by [Prof. Chang Tang (唐厂)](https://tangchang.net/). He received the B.Eng. degree in Mechanical Design, Manufacturing, and Automation from [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/) in 2022, and the M.Eng. degree in Computer Science from the same university in 2026. His research interests include **multimodal representation learning** and **self-supervised learning**, focusing on **interpretability** and applications in **multimodal medicine** and **computer vision**.
 
-<div class="zh">刘睿萌，<a href="https://www.hust.edu.cn/">华中科技大学</a>计算机科学与技术学院博士研究生，导师为<a href="https://tangchang.net/">唐厂教授</a>。2022 年获<a href="https://www.cug.edu.cn/">中国地质大学（武汉）</a>机械设计制造及其自动化专业学士学位，2026 年获该校计算机科学与技术专业硕士学位。主要研究方向为<strong>多模态表示学习</strong>与<strong>自监督学习</strong>，聚焦<strong>可解释性</strong>及其在<strong>多模态医学</strong>与<strong>计算机视觉</strong>中的应用。</div>
+<div class="zh">刘睿萌，<a href="https://www.hust.edu.cn/">华中科技大学</a>计算机科学与技术学院博士研究生，导师为<a href="https://tangchang.net/">唐厂教授</a>。2022 年获<a href="https://www.cug.edu.cn/">中国地质大学（武汉）</a>机械设计制造及其自动化专业学士学位，2026 年获该校计算机科学与技术专业硕士学位。主要研究方向为<strong>多模态表示学习</strong>与<strong>自监督学习</strong>，聚焦其在<strong>多模态医学</strong>与<strong>计算机视觉</strong>中的应用。</div>
 
 <!-- 唐厂老师链接：https://tangchang.net/ （已按小萌老师要求替换）
      邮箱 liuruimeng@hust.edu.cn 已加到 _config.yml，侧边栏会显示 -->
