@@ -5,7 +5,14 @@
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
   <div class="author__avatar">
-    <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
+    <!-- 头像：AVIF 版带 HDR 增益图（gain map），在支持 HDR 的屏幕 + 浏览器上
+         （Chrome/Edge）会显示高光更亮的效果；不支持 gain map 的浏览器
+         （Safari / Firefox）和不支持 AVIF 的浏览器都自动退回下面的 JPEG，
+         看到的画面和以前完全一样，不会更暗。 -->
+    <picture>
+      <source srcset="{{ '/images/avatar-hdr.avif' | relative_url }}" type="image/avif">
+      <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
+    </picture>
   </div>
 
   <div class="author__content">
