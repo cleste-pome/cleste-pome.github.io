@@ -1,72 +1,137 @@
+# cleste 的个人学术主页
 
-<h1 align="center">
-AcadHomepage
-</h1>
+这是 [cleste](https://github.com/cleste-pome) 的个人学术主页源码。
 
-<div align="center">
+- 🌐 线上地址：**https://cleste-pome.github.io/**
+- 📦 仓库地址：https://github.com/cleste-pome/cleste-pome.github.io
 
-[![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [中文文档](./docs/README-zh.md) 
+---
+
+## 模板来源与致谢
+
+本网站**不是从零编写**，而是基于开源项目 **AcadHomepage** 搭建的。在此向原作者致谢：
+
+| 项目 | 作者 | 原始链接 | 许可证 |
+| --- | --- | --- | --- |
+| **AcadHomepage** | [Yi Ren (RayeRen)](https://github.com/RayeRen) | https://github.com/RayeRen/acad-homepage.github.io | MIT |
+
+- 本仓库的页面结构、样式、Jekyll 模板与构建配置**均来自 AcadHomepage**；
+- 本仓库在此基础上**仅修改了个人配置与内容**（`_config.yml`、`_pages/about.md`、`_data/navigation.yml` 以及后续的个人图片素材）；
+- 原项目的 MIT 许可证已按许可证要求**完整保留**于本仓库的 [`LICENSE`](./LICENSE) 文件中，版权归 Yi Ren 所有；
+- 原作者的个人主页：https://rayeren.github.io/
+- 原始模板的演示页：https://rayeren.github.io/acad-homepage.github.io/
+
+AcadHomepage 还受到以下项目影响，一并致谢：
+- [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) (MIT)
+- [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io) (MIT)
+
+> 如果你也想用这个模板，请直接去[原始仓库](https://github.com/RayeRen/acad-homepage.github.io)自行 fork，
+> 并保留原作者的版权声明。本项目中的个人内容（姓名、学校、论文等）请勿直接搬运。
+
+---
+
+## 技术栈
+
+- **Jekyll** 静态站点生成器
+- **GitHub Pages** 托管（从 `main` 分支根目录直接构建）
+- **GitHub Actions** 可选：自动抓取 Google Scholar 引用数据
+
+## 目录结构
+
+```
+_config.yml              站点主配置（标题、作者、社交链接等）
+_data/navigation.yml     顶部导航栏栏目
+_pages/about.md          主页全部内容（个人简介、论文、教育经历等）
+_layouts/                页面布局模板
+_includes/               页面组件
+_sass/                   样式源码
+assets/                  静态资源（CSS / JS / 字体）
+images/                  图片素材（头像、favicon、论文配图）
+google_scholar_crawler/  可选：Google Scholar 引用数抓取脚本
+docs/                    模板自带文档与截图
+LICENSE                  原模板 MIT 许可证（请勿删除）
+```
+
+## 日常维护：怎么改内容
+
+绝大多数修改只需要动两个文件：
+
+**1. 改个人信息 / 社交链接** → `_config.yml`
+
+```yaml
+title       : "cleste"                                    # 浏览器标签页标题
+description : "..."                                       # SEO 描述
+repository  : "cleste-pome/cleste-pome.github.io"         # 必须是 用户名/仓库名
+author:
+  name      : "cleste"                                    # 页面显示的名字
+  avatar    : "images/android-chrome-512x512.png"         # 头像
+  bio       : "..."                                       # 一句话身份
+  location  : "Wuhan, China"
+  googlescholar : "https://scholar.google.com/citations?user=XXXX"  # 填上就显示图标
+  email     : "you@example.com"
+  github    : "cleste-pome"
+```
+
+**2. 改主页正文** → `_pages/about.md`
+
+用 Markdown 直接写即可。各板块的标题前带 emoji（`# 🔥 News`、`# 📝 Publications` …），
+如果改动了标题文字，记得同步更新 `_data/navigation.yml` 里的跳转锚点。
+
+论文条目用模板提供的卡片样式：
+
+```html
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/你的论文配图.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[论文标题](论文链接)
+
+**作者1**, 作者2, 作者3
+
+[**Paper**](链接) [**Code**](链接)
+- 一句话说明这篇论文做了什么。
 </div>
+</div>
+```
 
-<p align="center">A Modern and Responsive Academic Personal Homepage</p>
+> 配图放到 `images/` 目录下，建议尺寸 500×300。
 
-<p align="center">
-    <br>
-    <img src="docs/screenshot.png" width="100%"/>
-    <br>
-</p>
+## 本地预览（可选）
 
-Some examples:
-- [Demo Page](https://rayeren.github.io/acad-homepage.github.io/)
-- [Personal Homepage of the author](https://rayeren.github.io/)
+需要 Ruby 环境，然后：
 
-## Key Features
-- **Automatically update google scholar citations**: using the google scholar crawler and github action, this REPO can update the author citations and publication citations automatically.
-- **Support Google analytics**: you can trace the traffics of your homepage by easy configuration.
-- **Responsive**: this homepage automatically adjust for different screen sizes and viewports.
-- **Beautiful and Simple Design**: this homepage is beautiful and simple, which is very suitable for academic personal homepage.
-- **SEO**: search Engine Optimization (SEO) helps search engines find the information you publish on your homepage easily, then rank it against similar websites.
+```bash
+bundle install
+bash run_server.sh
+```
 
-## Quick Start
+浏览器打开 http://127.0.0.1:4000 即可实时预览。
 
-1. Fork this REPO and rename to `USERNAME.github.io`, where `USERNAME` is your github USERNAME.
-1. Configure the google scholar citation crawler:
-    1. Find your google scholar ID in the url of your google scholar page (e.g., https://scholar.google.com/citations?user=SCHOLAR_ID), where `SCHOLAR_ID` is your google scholar ID.
-    1. Set GOOGLE_SCHOLAR_ID variable to your google scholar ID in `Settings -> Secrets -> Actions -> New repository secret` of the REPO website with `name=GOOGLE_SCHOLAR_ID` and `value=SCHOLAR_ID`.
-    1. Click the `Action` of the REPO website and enable the workflows by clicking *"I understand my workflows, go ahead and enable them"*. This github action will generate google scholar citation stats data `gs_data.json` in `google-scholar-stats` branch of your REPO. When you update your main branch, this action will be triggered. This action will also be trigger 08:00 UTC everyday.
-1. Generate favicon using [favicon-generator](https://redketchup.io/favicon-generator) and download all generated files to `REPO/images`.
-1. Modify the configuration of your homepage `_config.yml`:
-    1. `title`: the title of your homepage
-    1. `description`: the description of your homepage
-    1. `repository`: USER_NAME/REPO_NAME  
-    1. `google_analytics_id` (optional): google analytics ID
-    1. SEO Related keys (optional): get these keys from search engine consoles (e.g. Google, Bing and Baidu) and paste here.
-    1. `author`: the author information of this homepage, including some other websites, emails, city and univeristy.
-    1. More configuration details are described in the comments.
-1. Add your homepage content in `_pages/about.md`.
-    1. You can use html+markdown syntax just same as jekyll.
-    1. You can use a `<span>` tag with class `show_paper_citations` and attribute `data` to display the citations of your paper. Set the data to the google scholar paper ID. For
-        ```html
-        <span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
-        ``` 
-        > Q: How to get the google scholar paper ID?   
-        > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
-1. Your page will be published at `https://USERNAME.github.io`.
+## 发布流程
 
-## Debug Locally
+本站由 GitHub Pages 从 `main` 分支自动构建，**推送即发布**：
 
-1. Clone your REPO to local using `git clone`.
-1. Install Jekyll building environment, including `Ruby`, `RubyGems`, `GCC` and `Make` following [the installation guide](https://jekyllrb.com/docs/installation/#requirements).
-1. Run `bash run_server.sh` to start Jekyll livereload server.
-1. Open http://127.0.0.1:4000 in your browser.
-1. If you change the source code of the website, the livereload server will automatically refresh.
-1. When you finish the modification of your homepage, `commit` your changings and `push` to your remote REPO using `git` command.
+```bash
+git add -A
+git commit -m "更新主页内容"
+git push
+```
 
-# Acknowledges
+推送后约 1 分钟生效，可在仓库的 **Actions** 页面查看构建进度。
 
-- AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
-- AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
-- AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
+## 可选：自动更新 Google Scholar 引用数
+
+1. 在 Google Scholar 主页网址里找到你的 ID：`https://scholar.google.com/citations?user=<SCHOLAR_ID>`
+2. 在仓库 `Settings → Secrets and variables → Actions` 中新建 secret：
+   `name=GOOGLE_SCHOLAR_ID`，`value=<SCHOLAR_ID>`
+3. 打开仓库 **Actions** 页面，启用 workflows
+4. 在工作流生成 `google-scholar-stats` 分支后，即可在主页用下面的写法显示引用数：
+
+```html
+<span class='show_paper_citations' data='论文的SCHOLAR_ID'></span>
+```
+
+## 许可证
+
+本项目沿用原模板的 **MIT License**，版权归原作者 **Yi Ren (RayeRen)** 所有，详见 [`LICENSE`](./LICENSE)。
+
+个人内容（个人信息、论文、图片等）版权归 cleste 所有。
