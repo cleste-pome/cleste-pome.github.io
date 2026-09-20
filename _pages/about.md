@@ -95,9 +95,9 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 
 # 📋 Academic Service
 
-Conference reviewer for AAAI, IJCAI, CVPR, and ICML. Journal reviewer for IEEE TPAMI, IEEE TNNLS, Information Fusion, IEEE TKDE, and IEEE TMM.
+Conference reviewer for ICML, CVPR, AAAI, and IJCAI. Journal reviewer for IEEE TPAMI, IEEE TKDE, IEEE TNNLS, IEEE TMM, and Information Fusion.
 
-<span class="zh">担任 AAAI、IJCAI、CVPR、ICML 审稿人，以及 IEEE TPAMI、TNNLS、Information Fusion、TKDE、TMM 等期刊审稿人。</span>
+<span class="zh">担任 ICML、CVPR、AAAI、IJCAI 审稿人，以及 IEEE TPAMI、TKDE、TNNLS、TMM、Information Fusion 等期刊审稿人。</span>
 
 <!-- 学位备注（不上网站）：硕士为学术硕士，博士为学术博士。
      网站上只写"硕士/博士学位"即可，不强调学术/专业之分。 -->
