@@ -122,6 +122,9 @@
 .author__name {
   margin: 0;
   text-align: center;   // 中文名 / 英文名两行都居中
+  // 居中后视觉上偏右，靠右侧内边距把文字整体往左推。
+  // 居中文本的位移 = 内边距的一半（这里约 11px），想挪更多就调大这个值
+  padding-right: 1em;
 
   @include breakpoint($large) {
     margin-top: 10px;
