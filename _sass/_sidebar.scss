@@ -121,6 +121,7 @@
 
 .author__name {
   margin: 0;
+  text-align: center;   // 中文名 / 英文名两行都居中
 
   @include breakpoint($large) {
     margin-top: 10px;
