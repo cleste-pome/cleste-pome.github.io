@@ -123,7 +123,7 @@ Conference reviewer for ICML, CVPR, AAAI, and IJCAI. Journal reviewer for IEEE T
 # 📖 Educations
 - *2026.09 - now*, **Ph.D. in Computer Science and Technology**, School of Computer Science and Technology, [Huazhong University of Science and Technology](https://www.hust.edu.cn/), Wuhan, China.<span class="zh">2026.09 - 至今，计算机科学与技术博士研究生，<a href="https://www.hust.edu.cn/">华中科技大学</a>计算机科学与技术学院，湖北省武汉市。</span>
 - *2023.09 - 2026.06*, **M.Eng. in Computer Science and Technology**, School of Computer Science, [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/), Wuhan, China.<span class="zh">2023.09 - 2026.06，计算机科学与技术硕士，<a href="https://www.cug.edu.cn/">中国地质大学（武汉）</a>计算机学院，湖北省武汉市。</span>
-- *2022.08 - 2023.07*, **Full-time High School Physics Teacher**, the 24th Graduate Student Support Mission of China University of Geosciences, Chuxiong, Yunnan, China.<span class="zh">2022.08 - 2023.07，全职高中物理教师，中国地质大学（武汉）第二十四届研究生支教团，云南省楚雄州。</span>
+- *2022.08 - 2023.07*, **Full-time High School Physics Teacher**, the 24th Graduate Student Support Mission of China University of Geosciences, Chuxiong, Yunnan, China.<span class="zh">2022.08 - 2023.07，全职高中物理教师，中国地质大学（武汉）研究生支教团，云南省楚雄州。</span>
 - *2018.09 - 2022.06*, **B.Eng. in Mechanical Design, Manufacturing and Automation**, [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/), Wuhan, China.<span class="zh">2018.09 - 2022.06，机械设计制造及其自动化专业学士，<a href="https://www.cug.edu.cn/">中国地质大学（武汉）</a>，湖北省武汉市。</span>
 
 
