@@ -21,8 +21,8 @@ redirect_from:
 
 # 📢 News
 - *2026.11*: &nbsp;🎉🎉 Our paper **MASA** is accepted by **IEEE TPAMI**.
-- *2026.09*: &nbsp;🎉🎉 Our paper **GMAE** is published in **IEEE TPAMI**.
-- *2025.09*: &nbsp;🎉🎉 Our paper **SparseMVC** is accepted by **NeurIPS 2025** as a **Spotlight** <span class="pub-highlight">(688/21575, Top 3.19%)</span>.
+- *2026.09*: &nbsp;📖📖 Our paper **GMAE** is published in **IEEE TPAMI**.
+- *2025.09*: &nbsp;🔥🔥 Our paper **SparseMVC** is accepted by **NeurIPS 2025** as a **Spotlight** <span class="pub-highlight">(688/21575, Top 3.19%)</span>.
 
 <!-- 顺序：最新在最上面
      News 锚点是 #-news，如果改标题文字记得同步 _data/navigation.yml -->
