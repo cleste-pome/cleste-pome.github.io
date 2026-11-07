@@ -24,7 +24,7 @@ author:
   name_display     : "刘睿萌<br>Ruimeng Liu"  # 侧边栏显示：中文名与英文名分两行
   # 头像：3:4 竖版裁剪，原图见仓库根目录（已加入 .gitignore，不会上传）
   avatar           : "images/avatar-niulai.jpg"
-  avatar_avif      : "images/avatar-niulai.avif"
+  avatar_avif      : "images/avatar-niulai-hdr.avif"
   bio              : "<strong>Ph.D. Student</strong> &middot; Huazhong University of Science and Technology<br><span class='author__bio-zh'>博士研究生 &middot; <a href='https://cs.hust.edu.cn/'>华中科技大学</a></span>"
   # 侧边栏"研究方向"区块（支持 HTML）
   research_label   : "🔬 Research Interests"
