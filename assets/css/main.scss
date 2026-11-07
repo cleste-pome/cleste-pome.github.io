@@ -200,6 +200,32 @@
     opacity: 1;
 }
 
+// 头像：鼠标处的柔光里透出旧照片（照片叠层 + 径向遮罩）
+.author__avatar .avatar-reveal {
+    position: absolute;
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 2;
+    object-fit: cover;
+    -webkit-mask-image: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%),
+        #000 0%, rgba(0, 0, 0, .86) 28%, transparent 52%);
+    mask-image: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%),
+        #000 0%, rgba(0, 0, 0, .86) 28%, transparent 52%);
+    transition: opacity .3s ease,
+                transform .55s cubic-bezier(.2, .8, .3, 1);
+}
+
+.author__avatar.is-tilting .avatar-reveal {
+    opacity: 1;
+    transition: opacity .3s ease,
+                transform .08s linear;
+}
+
+@supports not ((-webkit-mask-image: radial-gradient(#000, transparent)) or (mask-image: radial-gradient(#000, transparent))) {
+    .author__avatar .avatar-reveal { display: none; }
+}
+
 // 论文条目：期刊/会议信息后的括注（CCF-A、一作等）单独占一行
 .pub-note {
     display: block;
