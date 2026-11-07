@@ -42,7 +42,7 @@ redirect_from:
 
 *IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.*<span class="pub-note">(<strong>CCF-A</strong>, <strong>First author</strong>)</span>
 
-[\[Code\]](https://github.com/cleste-pome/MASA)
+[\[Paper\]](https://github.com/cleste-pome/MASA) &nbsp; [\[Code\]](https://github.com/cleste-pome/MASA)
 </div>
 </div>
 
