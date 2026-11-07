@@ -20,11 +20,11 @@ redirect_from:
      邮箱 liuruimeng@hust.edu.cn 已加到 _config.yml，侧边栏会显示 -->
 
 # 📢 News
+- *2026.11*: &nbsp;🎉🎉 Our paper **MASA** is accepted by **IEEE TPAMI**.
 - *2026.09*: &nbsp;🎉🎉 Our paper **GMAE** is published in **IEEE TPAMI**.
 - *2025.09*: &nbsp;🎉🎉 Our paper **SparseMVC** is accepted by **NeurIPS 2025** as a **Spotlight** <span class="pub-highlight">(688/21575, Top 3.19%)</span>.
 
 <!-- 顺序：最新在最上面
-     MASA 录用后，在这里加一条
      News 锚点是 #-news，如果改标题文字记得同步 _data/navigation.yml -->
 
 # 📝 Publications
@@ -32,22 +32,6 @@ redirect_from:
 <!-- 排序：最新发表的放在最上面，按年份分小节 -->
 
 ## 2026
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><picture><source srcset='images/papers/gmae-framework.avif' type="image/avif"><img src='images/papers/gmae-framework.png' alt="GMAE" width="100%"></picture></div></div>
-<div class='paper-box-text' markdown="1">
-
-**Learning Disentangled Representations for Generalized Multi-view Clustering**
-
-Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwang Liu, Kunlun He, Wanqing Li
-
-*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.*<span class="pub-note">(<strong>CCF-A</strong>, <strong>Co-first author</strong>)</span>
-
-[\[Paper\]](https://ieeexplore.ieee.org/document/11494292/) &nbsp; [\[Code\]](https://github.com/obananas/GMAE)
-</div>
-</div>
-
-<!-- 
-  小萌老师要求：MASA 这篇还在返修中，先不展示。等录用后把下面这段取消注释即可。
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><picture><source srcset='images/papers/masa-framework.avif' type="image/avif"><img src='images/papers/masa-framework.png' alt="MASA" width="100%"></picture></div></div>
 <div class='paper-box-text' markdown="1">
@@ -62,7 +46,18 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 </div>
 </div>
 
--->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><picture><source srcset='images/papers/gmae-framework.avif' type="image/avif"><img src='images/papers/gmae-framework.png' alt="GMAE" width="100%"></picture></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Learning Disentangled Representations for Generalized Multi-view Clustering**
+
+Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwang Liu, Kunlun He, Wanqing Li
+
+*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.*<span class="pub-note">(<strong>CCF-A</strong>, <strong>Co-first author</strong>)</span>
+
+[\[Paper\]](https://ieeexplore.ieee.org/document/11494292/) &nbsp; [\[Code\]](https://github.com/obananas/GMAE)
+</div>
+</div>
 
 ## 2025
 
