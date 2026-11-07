@@ -6,8 +6,9 @@
 
   <div class="author__avatar">
     
+    {% assign avatar_avif = author.avatar_avif | default: '/images/avatar-hdr.avif' %}
     <picture>
-      <source srcset="{{ '/images/avatar-hdr.avif' | relative_url }}" type="image/avif">
+      <source srcset="{{ avatar_avif | relative_url }}" type="image/avif">
       <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
     </picture>
   </div>
