@@ -90,17 +90,41 @@
     width: auto;
     height: auto;
   }
+}
+
+// 头像窗口：边框、白边、圆角都只画在这一层；
+// 主图和旧图都放在内容区里，共享同一个盒子，保证完全对齐。
+.avatar-stage {
+  position: relative;
+  display: block;
+  width: 187px;            // 175 内容 + 5px padding ×2 + 1px border ×2
+  max-width: 100%;
+  padding: 5px;
+  border: 1px solid $border-color;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  will-change: transform;
+  transition: transform .55s cubic-bezier(.2, .8, .3, 1),
+              box-shadow .55s ease;
+
+  picture { display: block; }
 
   picture img {
-    max-width: 175px;
-    min-width: 75px;
+    display: block;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
-
-    @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
-    }
+    object-fit: cover;
   }
+}
+
+.author__avatar.is-tilting .avatar-stage {
+  transition: transform .08s linear,
+              box-shadow .25s ease;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, .22);
 }
 
 .author__content {

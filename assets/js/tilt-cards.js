@@ -26,7 +26,7 @@
       maxTilt  : 7,        // 最大倾斜角度
       glareA   : 0,        // 头像不用白色反光，改为旧照片透出
       glareS   : 40,       // 反光半径(%)
-      revealSrc: 'images/avatar.jpg'  // 光晕里显示的旧头像
+      transformStage: true // 整块头像窗口一起倾斜
     },
     {
       selector : '.paper-box-image',
@@ -49,6 +49,9 @@
     var MAX_TILT = cfg.maxTilt;
     var img = box.querySelector('img');
     if (!img) return;
+    var tilt = cfg.transformStage ? box.querySelector('.avatar-stage') : img;
+    if (!tilt) tilt = img;
+    var reveal = box.querySelector('.avatar-reveal');
 
     // 反光层：插在图片后面，和图片完全重合
     var glare = document.createElement('span');
@@ -58,17 +61,6 @@
     glare.style.setProperty('--glare-a', cfg.glareA);
     glare.style.setProperty('--glare-s', cfg.glareS + '%');
     box.appendChild(glare);
-
-    // 头像专用：旧照片叠层，用径向遮罩只在指针附近露出来
-    var reveal = null;
-    if (cfg.revealSrc) {
-      reveal = document.createElement('img');
-      reveal.className = 'avatar-reveal';
-      reveal.src = cfg.revealSrc;
-      reveal.alt = '';
-      reveal.setAttribute('aria-hidden', 'true');
-      box.appendChild(reveal);
-    }
 
     var rx = 0, ry = 0;          // 当前旋转角
     var gx = 50, gy = 50;        // 高光位置（百分比）
@@ -85,14 +77,6 @@
       glare.style.left   = img.offsetLeft + 'px';
       glare.style.top    = img.offsetTop  + 'px';
       glare.style.borderRadius = window.getComputedStyle(img).borderRadius;
-
-      if (reveal) {
-        reveal.style.width  = img.clientWidth + 'px';
-        reveal.style.height = img.clientHeight + 'px';
-        reveal.style.left   = (img.offsetLeft + img.clientLeft) + 'px';
-        reveal.style.top    = (img.offsetTop  + img.clientTop)  + 'px';
-        reveal.style.borderRadius = window.getComputedStyle(img).borderRadius;
-      }
     }
 
     function render() {
@@ -105,14 +89,14 @@
         'translateZ(' + (pressed ? PRESS_Z : 0) + 'px) ' +
         'scale(' + (pressed ? PRESS_S : 1) + ')';
 
-      img.style.transform = transform;
+      // 头像转整个窗口；论文图转图片本身
+      tilt.style.transform = transform;
       // 反光层跟着一起转，否则会像贴纸一样脱开
       glare.style.transform = transform;
       glare.style.setProperty('--gx', gx.toFixed(1) + '%');
       glare.style.setProperty('--gy', gy.toFixed(1) + '%');
 
       if (reveal) {
-        reveal.style.transform = transform;
         reveal.style.setProperty('--gx', gx.toFixed(1) + '%');
         reveal.style.setProperty('--gy', gy.toFixed(1) + '%');
       }

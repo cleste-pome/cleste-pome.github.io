@@ -7,10 +7,13 @@
   <div class="author__avatar">
     
     {% assign avatar_avif = author.avatar_avif | default: '/images/avatar-hdr.avif' %}
-    <picture>
-      <source srcset="{{ avatar_avif | relative_url }}" type="image/avif">
-      <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
-    </picture>
+    <div class="avatar-stage">
+      <picture>
+        <source srcset="{{ avatar_avif | relative_url }}" type="image/avif">
+        <img src="{{ author.avatar }}" alt="{{ author.name }}">
+      </picture>
+      <img class="avatar-reveal" src="{{ '/images/avatar.jpg' | relative_url }}" alt="" aria-hidden="true" decoding="async">
+    </div>
   </div>
 
   <div class="author__content">
