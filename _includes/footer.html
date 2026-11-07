@@ -1,11 +1,5 @@
 {% if site.visitor_map.enabled %}
-<!--
-  页脚访客地图
-  静态站点自己无法记录访客来源，这里走的是两条免注册的公开接口：
-    · 访客国家：Cloudflare trace（失败退回 ipwho.is）
-    · 计数存储：Abacus（免费计数 API）
-  逻辑在 assets/js/visitor-map.js，样式在 _sass/_footer.scss 的 .visitor-footer
--->
+
 <footer class="visitor-footer" role="contentinfo">
   <div class="visitor-footer__inner">
 

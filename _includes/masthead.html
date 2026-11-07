@@ -1,13 +1,5 @@
 <div class="masthead">
-  <!-- 深浅色切换：固定在右上角。
-       ① 放在 .greedy-nav 外面 —— 导航项一多就会被折叠进汉堡菜单，
-          放里面就得点两下，而且常常第一眼看不到。
-       ② 必须用 <span>，不能用 <button> 也不能用 <a>，模板自带的脚本会劫持这两者：
-          · $("#site-nav button")  → 把任何 button 当成汉堡菜单按钮，
-                                     绑上"展开菜单"事件、并套上灰色实心块样式
-          · $("a").smoothScroll()  → 给每个 <a> 绑平滑滚动，
-                                     href="#" 会让点一下页面跳回顶部
-       键盘可达性靠 tabindex + JS 里的 Enter/Space 处理补充。 -->
+  
   <span id="theme-toggle" class="theme-toggle" role="button" tabindex="0"
         aria-label="切换深色 / 浅色模式" title="切换深色 / 浅色模式">
     <i class="fas fa-sun" aria-hidden="true"></i><span class="theme-toggle__label">Light</span>
