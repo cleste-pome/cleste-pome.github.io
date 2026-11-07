@@ -19,6 +19,10 @@ $dk-link      : #6ea8fe;
 html[data-theme="dark"] {
   color-scheme: dark;      // 让滚动条、表单控件也变深
 
+  // 文字选中：模板默认黑底白字，在暗色背景上和背景融为一体
+  ::-moz-selection { color: #fff; background: #3b7dd8; }
+  ::selection      { color: #fff; background: #3b7dd8; }
+
   body {
     background-color: $dk-bg;
     color: $dk-text;

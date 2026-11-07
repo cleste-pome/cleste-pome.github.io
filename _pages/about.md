@@ -20,9 +20,9 @@ redirect_from:
      邮箱 liuruimeng@hust.edu.cn 已加到 _config.yml，侧边栏会显示 -->
 
 # 📢 News
-- *2026.11*: &nbsp;🎉🎉 Our paper **MASA** is accepted by **IEEE TPAMI**.
-- *2026.09*: &nbsp;📖📖 Our paper **GMAE** is published in **IEEE TPAMI**.
-- *2025.09*: &nbsp;🔥🔥 Our paper **SparseMVC** is accepted by **NeurIPS 2025** as a **Spotlight** <span class="pub-highlight">(688/21575, Top 3.19%)</span>.
+- *2026.11*: &nbsp;🎉 Our paper **MASA** is accepted by **IEEE TPAMI**.
+- *2026.09*: &nbsp;📖 Our paper **GMAE** is published in **IEEE TPAMI**.
+- *2025.09*: &nbsp;⭐ Our paper **SparseMVC** is accepted by **NeurIPS 2025** as a **Spotlight** <span class="pub-highlight">(688/21575, Top 3.19%)</span>.
 
 <!-- 顺序：最新在最上面
      News 锚点是 #-news，如果改标题文字记得同步 _data/navigation.yml -->
@@ -33,7 +33,7 @@ redirect_from:
 
 ## 2026
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><picture><source srcset='images/papers/masa-framework-2026.avif?v=2' type="image/avif"><img src='images/papers/masa-framework-2026.png?v=2' alt="MASA" width="100%"></picture></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><picture><source srcset='images/papers/masa-framework-2026.avif?v=3' type="image/avif"><img src='images/papers/masa-framework-2026.png?v=3' alt="MASA" width="100%"></picture></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Towards Robust Multi-View Clustering via Early-to-late Manifold Consistency Calibration**
