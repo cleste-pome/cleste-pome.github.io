@@ -16,20 +16,12 @@ redirect_from:
 
 <div class="zh">刘睿萌，<a href="https://cs.hust.edu.cn/">华中科技大学</a>计算机科学与技术学院博士研究生，导师为<a href="https://tangchang.net/">唐厂教授</a>。2022 年获<a href="https://www.cug.edu.cn/">中国地质大学（武汉）</a>机械设计制造及其自动化专业学士学位，2026 年获该校计算机科学与技术专业硕士学位。主要研究方向为<strong>多模态表示学习</strong>与<strong>自监督学习</strong>，聚焦其在<strong>多模态医学</strong>与<strong>计算机视觉</strong>中的应用。</div>
 
-{% comment %} 唐厂老师链接：https://tangchang.net/ （已按小萌老师要求替换）
-     邮箱 liuruimeng@hust.edu.cn 已加到 _config.yml，侧边栏会显示 {% endcomment %}
-
 # 📢 News
 - *2026.11*: &nbsp;🎉 Our paper **MASA** is accepted by **IEEE TPAMI**.
 - *2026.09*: &nbsp;📖 Our paper **GMAE** is published in **IEEE TPAMI**.
 - *2025.09*: &nbsp;⭐ Our paper **SparseMVC** is accepted by **NeurIPS 2025** as a **Spotlight** <span class="pub-highlight">(688/21575, Top 3.19%)</span>.
 
-{% comment %} 顺序：最新在最上面
-     News 锚点是 #-news，如果改标题文字记得同步 _data/navigation.yml {% endcomment %}
-
 # 📝 Publications
-
-{% comment %} 排序：最新发表的放在最上面，按年份分小节 {% endcomment %}
 
 ## 2026
 
@@ -74,38 +66,11 @@ Xin Zou<sup>*</sup>, **Ruimeng Liu**<sup>*</sup>, Chang Tang, Zhenglai Li, Xinwa
 </div>
 </div>
 
-{% comment %}
-  📜 Patents —— 占位，暂时不显示
-  ---------------------------------------------------------------------------
-  小萌老师的专利还没拿到最终授权，先不上网站（避免被质疑）。
-  拿到授权号后：
-    1. 把下面那段取消注释，填上真实信息
-    2. 在 _data/navigation.yml 里加一条导航： - title: "Patents (专利)"  url: "/#-patents"
-  格式参考：
-    已授权：**专利名称**, 发明人1, **刘睿萌**, 发明人3. *中国发明专利*, 授权号 ZLxxxxxxxxx, 2024.
-    审查中：**专利名称**, **刘睿萌**, 王五. *中国发明专利*, 申请号 CNxxxxxxxxx, 2023. (实质审查中)
-  注意：软著可以放同一小节，但要标明是"软件著作权"而不是专利。
-
-# 📜 Patents
-
-- **专利名称**, 发明人1, **刘睿萌**, 发明人3. *中国发明专利*, 授权号 ZLxxxxxxxxx, 2024.
-
-{% endcomment %}
-
 # 📋 Academic Service
 
 Conference reviewer for ICML, CVPR, AAAI, and IJCAI. Journal reviewer for IEEE TPAMI, IEEE TKDE, IEEE TNNLS, IEEE TMM, and Information Fusion.
 
 <span class="zh">担任 ICML、CVPR、AAAI、IJCAI 审稿人，以及 IEEE TPAMI、TKDE、TNNLS、TMM、Information Fusion 等期刊审稿人。</span>
-
-{% comment %} 学位备注（不上网站）：硕士为学术硕士，博士为学术博士。
-     网站上只写"硕士/博士学位"即可，不强调学术/专业之分。 {% endcomment %}
-
-{% comment %} TODO(小萌老师): 还有别的论文就复制上面任意一个 paper-box 整块。
-     配图放 images/papers/ 目录。不想用卡片样式也可以写成一行：
-     **标题** - 作者. *期刊 年份*. [\[Paper\]]() [\[Code\]]()
-     GMAE 的 [Paper] 我给了 IEEE Xplore 链接，如需换成 DOI 链接：
-     https://doi.org/10.1109/TPAMI.2026.3687339 {% endcomment %}
 
 # 💻 Projects
 
@@ -113,19 +78,9 @@ Conference reviewer for ICML, CVPR, AAAI, and IJCAI. Journal reviewer for IEEE T
 - *2026.01 - 2028.12*, **多视图聚类的理论、方法及应用**, 青年科学基金项目（B类），200 万元，在研，**参与**.
 - *2024.06 - 2026.06*, **多场景下跨模态数据融合的检索技术研究**, 中央高校基本科研业务费-大学生自主创新资助计划（项目编号：2024XLB7），3 万元，已结题，**主持**.
 
-{% comment %} TODO(小萌老师): 还有别的项目就按上面格式加 {% endcomment %}
-
 # 📖 Educations
 - *2026.09 - now*, **Ph.D. in Computer Science and Technology**, School of Computer Science and Technology, [Huazhong University of Science and Technology](https://cs.hust.edu.cn/), Wuhan, China.<span class="zh">2026.09 - 至今，计算机科学与技术博士研究生，<a href="https://cs.hust.edu.cn/">华中科技大学</a>计算机科学与技术学院，湖北省武汉市。</span>
 - *2023.09 - 2026.06*, **M.Eng. in Computer Science and Technology**, School of Computer Science, [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/), Wuhan, China.<span class="zh">2023.09 - 2026.06，计算机科学与技术硕士，<a href="https://www.cug.edu.cn/">中国地质大学（武汉）</a>计算机学院，湖北省武汉市。</span>
 - *2022.07 - 2023.07*, **Full-time High School Physics Teacher**, the Graduate Student Support Mission of China University of Geosciences, Chuxiong, Yunnan, China.<span class="zh">2022.07 - 2023.07，全职高中物理教师，中国地质大学（武汉）研究生支教团，云南省楚雄州。</span>
 - *2018.09 - 2022.06*, **B.Eng. in Mechanical Design, Manufacturing and Automation**, [China University of Geosciences (Wuhan)](https://www.cug.edu.cn/), Wuhan, China.<span class="zh">2018.09 - 2022.06，机械设计制造及其自动化专业学士，<a href="https://www.cug.edu.cn/">中国地质大学（武汉）</a>，湖北省武汉市。</span>
 
-
-{% comment %} 
-  这几个板块暂时留空（导航栏里也先没放），等你发材料过来我再加回来：
-  # 🎖 Honors and Awards
-  # 🎬 Services
-  # 💬 Invited Talks
-  # 💻 Internships
-{% endcomment %}
