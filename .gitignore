@@ -1,6 +1,0 @@
-_site/
-push.sh
-.DS_Store
-
-# 原始素材（只保留处理后的 images/ 内容，这里的东西不会上传）
-.source/
