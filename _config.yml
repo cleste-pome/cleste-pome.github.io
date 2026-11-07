@@ -9,7 +9,6 @@
 title                    : "Ruimeng Liu"
 description              : "Multimodal representation learning and self-supervised learning, focusing on interpretability and applications in multimodal medicine and computer vision."
 repository               : "cleste-pome/cleste-pome.github.io"
-google_scholar_stats_use_cdn : true
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -79,7 +78,6 @@ include:
   - files
 exclude:
   - docs
-  - google_scholar_crawler
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

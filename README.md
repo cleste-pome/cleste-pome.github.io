@@ -34,7 +34,6 @@ AcadHomepage 还受到以下项目影响，一并致谢：
 
 - **Jekyll** 静态站点生成器
 - **GitHub Pages** 托管（从 `main` 分支根目录直接构建）
-- **GitHub Actions** 可选：自动抓取 Google Scholar 引用数据
 
 ## 目录结构
 
@@ -47,7 +46,6 @@ _includes/               页面组件
 _sass/                   样式源码
 assets/                  静态资源（CSS / JS / 字体）
 images/                  图片素材（头像、favicon、论文配图）
-google_scholar_crawler/  可选：Google Scholar 引用数抓取脚本
 docs/                    模板自带文档与截图
 LICENSE                  原模板 MIT 许可证（请勿删除）
 ```
@@ -117,18 +115,6 @@ git push
 ```
 
 推送后约 1 分钟生效，可在仓库的 **Actions** 页面查看构建进度。
-
-## 可选：自动更新 Google Scholar 引用数
-
-1. 在 Google Scholar 主页网址里找到你的 ID：`https://scholar.google.com/citations?user=<SCHOLAR_ID>`
-2. 在仓库 `Settings → Secrets and variables → Actions` 中新建 secret：
-   `name=GOOGLE_SCHOLAR_ID`，`value=<SCHOLAR_ID>`
-3. 打开仓库 **Actions** 页面，启用 workflows
-4. 在工作流生成 `google-scholar-stats` 分支后，即可在主页用下面的写法显示引用数：
-
-```html
-<span class='show_paper_citations' data='论文的SCHOLAR_ID'></span>
-```
 
 ## 可选：页脚访客地图（浏览量 + 世界地图打点）
 
