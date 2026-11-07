@@ -204,12 +204,10 @@
 .author__avatar .avatar-reveal {
     position: absolute;
     top: 5px;
-    right: 5px;
-    bottom: 5px;
     left: 5px;
     display: block;
-    width: auto;
-    height: auto;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
     pointer-events: none;
     opacity: 0;
     z-index: 2;
