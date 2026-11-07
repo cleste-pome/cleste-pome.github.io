@@ -97,9 +97,8 @@
 .avatar-stage {
   position: relative;
   display: block;
-  width: 187px;            // 175 内容 + 5px padding ×2 + 1px border ×2
+  width: 177px;            // 175 内容 + 1px border ×2
   max-width: 100%;
-  padding: 5px;
   border: 1px solid $border-color;
   border-radius: 50%;
   overflow: hidden;
