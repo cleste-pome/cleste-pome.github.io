@@ -33,7 +33,7 @@ redirect_from:
 
 ## 2026
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><picture><source srcset='images/papers/masa-framework-2026.avif?v=5' type="image/avif"><img src='images/papers/masa-framework-2026.png?v=5' alt="MASA" width="100%"></picture></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><picture><source srcset='images/papers/masa-framework-2026.avif?v=6' type="image/avif"><img src='images/papers/masa-framework-2026.png?v=6' alt="MASA" width="100%"></picture></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Towards Robust Multi-View Clustering via Early-to-late Manifold Consistency Calibration**
