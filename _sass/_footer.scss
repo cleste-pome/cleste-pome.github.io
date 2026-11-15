@@ -72,7 +72,8 @@
     display: block;
     width: 100%;
     height: auto;
-    box-shadow: 3px 3px 6px #888;
+    /* 四周均匀的柔光，不要论文图那种右下角的投影 */
+    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
     backface-visibility: hidden;
     will-change: transform;
     transition: transform .55s cubic-bezier(.2, .8, .3, 1),
