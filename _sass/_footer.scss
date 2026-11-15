@@ -36,18 +36,20 @@
 
   &__body {
     display: flex;
-    align-items: center;
+    align-items: flex-start;   // 顶边对齐，下面靠 margin 精确对到地图点阵
     justify-content: center;
     gap: 2.2em;
     margin-top: 1.2em;
   }
 
-  /* 海报宽度为原来 288px 的 85%；地图本身尺寸不变，整体向右让位 */
+  /* 地图点阵在 1440x720 的 viewBox 里只占 y=30~574，
+     即 720px 宽地图（高 360）上，点阵从 15px 到 287px、共 272px 高。
+     海报 520x650 → 高 272 时宽 218px，顶边再下移 15px 与最上面的点齐平。 */
   &__art {
     flex: 0 0 auto;
-    width: 245px;
+    width: 218px;
     max-width: 34%;
-    transform: translate(-14px, -14px);
+    margin-top: 15px;
   }
 
   &__map {
@@ -86,15 +88,17 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .visitor-footer__body {
     flex-direction: column;
+    align-items: center;
     gap: 1.6em;
   }
 
   .visitor-footer__art {
-    width: 260px;
+    width: 245px;
     max-width: 100%;
+    margin-top: 0;
   }
 }
 
