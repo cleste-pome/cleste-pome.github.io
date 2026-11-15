@@ -8,10 +8,6 @@
     {% endif %}
 
     <div class="visitor-footer__body">
-      <div class="visitor-footer__art">
-        {% include poster-art.html %}
-      </div>
-
       <div class="visitor-map">
       <div class="visitor-map__stage">
         <img class="visitor-map__base"
@@ -24,6 +20,10 @@
         <span data-visitor-stat>—</span>{% if site.visitor_map.subtitle %} &middot; {{ site.visitor_map.subtitle }}{% endif %}
       </p>
       </div>
+    </div>
+
+    <div class="visitor-footer__art">
+      {% include poster-art.html %}
     </div>
 
   </div>

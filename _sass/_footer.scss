@@ -35,16 +35,13 @@
   }
 
   &__body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
     margin-top: 1.2em;
   }
 
   &__art {
-    flex: 0 0 300px;
-    max-width: 300px;
+    width: 300px;
+    max-width: 100%;
+    margin: 1.8em auto 0;
     perspective: 900px;
   }
 
@@ -77,7 +74,11 @@
   position: relative;
   width: 100%;
   aspect-ratio: 4 / 5;
-  background: #111;
+  background-color: #ececec;
+  /* 缩略图占位：图片下载完成前先显示模糊底图，避免出现黑块 */
+  background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ0ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAAeABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAABAADAQX/xAAmEAACAQQBAgYDAAAAAAAAAAABAgMRAAQhMRJCBRMUImFBUXGB/8QAGAEAAgMAAAAAAAAAAAAAAAAAAwACBAX/xAAgEQACAgEDBQAAAAAAAAAAAAACAQARIQMSEwQxMkJh/9oADAMBAAIRAxEAPwA/NzIYscvJGsm+0UP7sfNMbYKTYakMwDsDunxY2RE88TkuKnXF3RV9OgQMehAG1s2ETLjxDbTN5UJdMRsdTIVJpx91tsORHOJIY69QegBGxbdV7ljESKvWQhOT5ihOs9LfjVBu+x6qAgq7E1FDQc2Hju58XdISFPl13xzdM2ePF9rBgS3uKU3/AG9NaKMl9kCPjTVXU2CMyFoh3GtSPm24weKJA6opmYV7qG20ujBdlArUM/Kf/9k=');
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 18px 40px rgba(0, 0, 0, .25);
   transform-style: preserve-3d;
   transition: transform .18s ease-out;
@@ -90,6 +91,7 @@
   background-image: url('/images/hust-cug-journey-display.png');
   background-image: image-set(
     url('/images/hust-cug-journey.avif') type('image/avif'),
+    url('/images/hust-cug-journey-display.webp') type('image/webp'),
     url('/images/hust-cug-journey-display.png') type('image/png')
   );
   background-size: 100% 100%;
@@ -102,13 +104,7 @@
 }
 
 @media (max-width: 720px) {
-  .visitor-footer__body {
-    flex-direction: column;
-    gap: 1.6em;
-  }
-
   .visitor-footer__art {
-    flex: 0 0 auto;
     width: 260px;
     max-width: 100%;
   }
