@@ -7,7 +7,12 @@
       <h4 class="visitor-footer__title">{{ site.visitor_map.title }}</h4>
     {% endif %}
 
-    <div class="visitor-map">
+    <div class="visitor-footer__body">
+      <div class="visitor-footer__art">
+        {% include poster-art.html %}
+      </div>
+
+      <div class="visitor-map">
       <div class="visitor-map__stage">
         <img class="visitor-map__base"
              src="{{ '/assets/img/world-dots.svg?v=3' | relative_url }}"
@@ -18,6 +23,7 @@
       <p class="visitor-map__stat">
         <span data-visitor-stat>—</span>{% if site.visitor_map.subtitle %} &middot; {{ site.visitor_map.subtitle }}{% endif %}
       </p>
+      </div>
     </div>
 
   </div>
