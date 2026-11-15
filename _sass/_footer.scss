@@ -62,18 +62,8 @@
   }
 }
 
-/* 毕业纪念海报：和论文配图同一套 —— HDR 增益图 + 鼠标倾斜反光 */
-.poster-link {
-  display: block;
-  text-decoration: none;
-  outline: none;
-
-  &:focus-visible {
-    outline: 2px solid #3b7dd8;
-    outline-offset: 4px;
-  }
-}
-
+/* 毕业纪念海报：和论文配图同一套 —— HDR 增益图 + 鼠标倾斜反光
+   不提供点开大图，也不允许右键另存 / 拖拽 */
 .poster {
   position: relative;
 
@@ -86,6 +76,11 @@
     will-change: transform;
     transition: transform .55s cubic-bezier(.2, .8, .3, 1),
                 box-shadow .55s ease;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
   }
 }
 

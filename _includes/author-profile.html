@@ -10,9 +10,9 @@
     <div class="avatar-stage">
       <picture>
         <source srcset="{{ avatar_avif | relative_url }}" type="image/avif">
-        <img src="{{ author.avatar }}" alt="{{ author.name }}">
+        <img src="{{ author.avatar }}" alt="{{ author.name }}" draggable="false">
       </picture>
-      <img class="avatar-reveal" src="{{ '/images/avatar.jpg' | relative_url }}" alt="" aria-hidden="true" decoding="async">
+      <img class="avatar-reveal" src="{{ '/images/avatar.jpg' | relative_url }}" alt="" aria-hidden="true" decoding="async" draggable="false">
     </div>
   </div>
 
