@@ -114,7 +114,7 @@
 
     function reset() {
       rx = 0; ry = 0; pressed = false;
-      box.classList.remove('is-tilting');
+      box.classList.remove('is-tilting', 'is-pressed');
       schedule();
     }
 
@@ -145,16 +145,21 @@
     box.addEventListener('mouseleave', reset);
 
     // 按住 → 往后退
-    box.addEventListener('mousedown', function () { pressed = true;  schedule(); });
+    box.addEventListener('mousedown', function () {
+      pressed = true;
+      box.classList.add('is-pressed');
+      schedule();
+    });
     document.addEventListener('mouseup', function () {
       if (!pressed) return;
       pressed = false;
+      box.classList.remove('is-pressed');
       schedule();
     });
 
     // 鼠标移出窗口时也可能收不到 mouseup，兜一下
     window.addEventListener('blur', function () {
-      if (pressed) { pressed = false; schedule(); }
+      if (pressed) { pressed = false; box.classList.remove('is-pressed'); schedule(); }
     });
 
     // 窗口尺寸变化后图片大小会变，重新对齐反光层
