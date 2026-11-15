@@ -33,6 +33,12 @@
       maxTilt  : 11,
       glareA   : 0.40,
       glareS   : 62
+    },
+    {
+      selector : '.poster',
+      maxTilt  : 11,
+      glareA   : 0.40,
+      glareS   : 62
     }
   ];
 

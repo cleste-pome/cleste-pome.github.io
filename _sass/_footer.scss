@@ -16,7 +16,7 @@
   text-align: center;
 
   &__inner {
-    max-width: 760px;
+    max-width: 1080px;
     margin: 0 auto;
   }
 
@@ -35,14 +35,18 @@
   }
 
   &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2em;
     margin-top: 1.2em;
   }
 
+  /* 海报宽 = 地图高度（720×360 的 4:5 图），地图本身尺寸不变，整体向右让位 */
   &__art {
-    width: 300px;
-    max-width: 100%;
-    margin: 1.8em auto 0;
-    perspective: 900px;
+    flex: 0 0 auto;
+    width: 288px;
+    max-width: 40%;
   }
 
   &__map {
@@ -58,7 +62,7 @@
   }
 }
 
-/* 毕业纪念海报：7 个分镜块，鼠标/滚动时轻微 3D 浮起 */
+/* 毕业纪念海报：和论文配图同一套 —— HDR 增益图 + 鼠标倾斜反光 */
 .poster-link {
   display: block;
   text-decoration: none;
@@ -72,38 +76,25 @@
 
 .poster {
   position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  background-color: #ececec;
-  /* 缩略图占位：图片下载完成前先显示模糊底图，避免出现黑块 */
-  background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ0ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAAeABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAABAADAQX/xAAmEAACAQQBAgYDAAAAAAAAAAABAgMRAAQhMRJCBRMUImFBUXGB/8QAGAEAAgMAAAAAAAAAAAAAAAAAAwACBAX/xAAgEQACAgEDBQAAAAAAAAAAAAACAQARIQMSEwQxMkJh/9oADAMBAAIRAxEAPwA/NzIYscvJGsm+0UP7sfNMbYKTYakMwDsDunxY2RE88TkuKnXF3RV9OgQMehAG1s2ETLjxDbTN5UJdMRsdTIVJpx91tsORHOJIY69QegBGxbdV7ljESKvWQhOT5ihOs9LfjVBu+x6qAgq7E1FDQc2Hju58XdISFPl13xzdM2ePF9rBgS3uKU3/AG9NaKMl9kCPjTVXU2CMyFoh3GtSPm24weKJA6opmYV7qG20ujBdlArUM/Kf/9k=');
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, .25);
-  transform-style: preserve-3d;
-  transition: transform .18s ease-out;
-}
 
-.poster-panel {
-  position: absolute;
-  inset: 0;
-  display: block;
-  background-image: url('/images/hust-cug-journey-display.png');
-  background-image: image-set(
-    url('/images/hust-cug-journey.avif') type('image/avif'),
-    url('/images/hust-cug-journey-display.webp') type('image/webp'),
-    url('/images/hust-cug-journey-display.png') type('image/png')
-  );
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transform: translateZ(0);
-  transition: transform .18s ease-out;
-  will-change: transform;
-  backface-visibility: hidden;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 6px #888;
+    backface-visibility: hidden;
+    will-change: transform;
+    transition: transform .55s cubic-bezier(.2, .8, .3, 1),
+                box-shadow .55s ease;
+  }
 }
 
 @media (max-width: 720px) {
+  .visitor-footer__body {
+    flex-direction: column;
+    gap: 1.6em;
+  }
+
   .visitor-footer__art {
     width: 260px;
     max-width: 100%;
