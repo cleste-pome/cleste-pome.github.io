@@ -26,6 +26,9 @@
     font-size: $type-size-5;
     font-weight: 700;
     color: $dark-gray;
+    // 海报占了左侧后，地图那一列整体右移，标题也要跟着右移同样的量：
+    // 中心 = 整块中心 + (海报宽 + 间隙) / 2，正好落在"views · …"那行的中心上
+    transform: translateX(calc((218px + 2.2em) / 2));
   }
 
   &__subtitle {
@@ -97,6 +100,10 @@
     width: 245px;
     max-width: 100%;
     margin-top: 0;
+  }
+
+  .visitor-footer__title {
+    transform: none;
   }
 }
 
