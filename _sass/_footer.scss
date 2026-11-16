@@ -42,14 +42,12 @@
     margin-top: 1.2em;
   }
 
-  /* 地图点阵在 1440x720 的 viewBox 里只占 y=30~574，
-     即 720px 宽地图（高 360）上，点阵从 15px 到 287px、共 272px 高。
-     海报 520x650 → 高 272 时宽 218px，顶边再下移 15px 与最上面的点齐平。 */
+  /* 舞台已经裁到点阵本身（720px 宽时高 272px），海报 520x650 →
+     高 272 时宽 218px，顶边、底边与地图最上/最下的点齐平。 */
   &__art {
     flex: 0 0 auto;
     width: 218px;
     max-width: 34%;
-    margin-top: 15px;
   }
 
   &__map {
@@ -112,16 +110,19 @@
     width: 100%;
     max-width: 720px;
     margin: 0 auto;
-    aspect-ratio: 2 / 1;
+    // 点阵在 viewBox 里只占 y=30~574，把上下空白裁掉：
+    // 舞台高度 = 544/1440 宽度，正好从最上面的点包到最下面的点
+    aspect-ratio: 1440 / 544;
+    overflow: hidden;
   }
 
   &__base,
   &__dots {
     position: absolute;
-    top: 0;
     left: 0;
+    top: -5.51%;      // 上移 30/720 个 viewBox 高度，让点阵贴住舞台顶边
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   &__dots {
