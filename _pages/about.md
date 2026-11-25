@@ -76,10 +76,10 @@ Conference reviewer for ICML, CVPR, AAAI, and IJCAI. Journal reviewer for IEEE T
 
 {% comment %}
 参与的项目不在前端显示，只在这里留档：
-- *2026.10 - 2028.09*, **面向地震大科学装置的科学数据生产线关键技术与应用**, 国家科技重大专项，1100&nbsp;万元，在研，**参与**.
-- *2026.01 - 2028.12*, **多视图聚类的理论、方法及应用**, 青年科学基金项目（B类），200&nbsp;万元，在研，**参与**.
+- *2026.10 - 2028.09*, **面向地震大科学装置的科学数据生产线关键技术与应用**, 国家科技重大专项，<span style="white-space:nowrap">1100&nbsp;万元</span>，在研，**参与**.
+- *2026.01 - 2028.12*, **多视图聚类的理论、方法及应用**, 青年科学基金项目（B类），<span style="white-space:nowrap">200&nbsp;万元</span>，在研，**参与**.
 {% endcomment %}
-- *2024.06 - 2026.06*, **多场景下跨模态数据融合的检索技术研究**, 中央高校基本科研业务费-大学生自主创新资助计划（项目编号：2024XLB7），3&nbsp;万元，已结题，**主持**.
+- *2024.06 - 2026.06*, **多场景下跨模态数据融合的检索技术研究**, 中央高校基本科研业务费-大学生自主创新资助计划（项目编号：2024XLB7），<span style="white-space:nowrap">3&nbsp;万元</span>，已结题，**主持**.
 
 # 📖 Educations
 - *2026.09 - now*, **Ph.D. in Computer Science and Technology**, School of Computer Science and Technology, [Huazhong University of Science and Technology](https://cs.hust.edu.cn/), Wuhan, China.<span class="zh">2026.09 - 至今，计算机科学与技术博士研究生，<a href="https://cs.hust.edu.cn/">华中科技大学</a>计算机科学与技术学院，湖北省武汉市。</span>
